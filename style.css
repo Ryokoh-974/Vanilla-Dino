@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*                 Titre du jeu              */
+header>h1 {
+    border: solid 1px;
+    display: flex;
+    color: black;
+    margin: 1rem;
+    font-size: 30px;
+}
+
+body {
+    background-color: #F8C477;
+}
+
+/*                 Règle du jeu              */
+section>p {
+    border: solid 1px;
+    display: flex;
+    color: black;
+    margin: 1rem;
+}
+
+
+/*                dino qui bouge de gauche à droite              */
+section>div {
+    height: 50px;
+}
+
+.dino-img {
+    height: 60px;
+    animation: animate 2.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(calc(99% + 10px))
+    }
+
+    100% {
+        transform: translateX(calc(-99% + 999px))
+    }
+}
+
+/*                         BOUTON     JOUER             */
+button>a>p {
+    all: unset;
+    text-align: center;
+    color: red;
+    background-color: black;
+    border-radius: 300px;
+    padding: 0.6rem 4rem;
+    border: solid 2px;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+button {
+    margin: 10rem;
+}
+
+/*                         Avatar DISNEY           */
