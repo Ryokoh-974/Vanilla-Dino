@@ -186,3 +186,94 @@ p > span {
     width: 70%;
   }
 }
+
+
+/*parti anthony*/
+/*
+nav {
+  background-color:#F8C477;
+  color:#558B2F;
+
+}
+
+section>div {
+  height: 50px;
+}
+
+.dino-img {
+  height: 60px;
+  animation: animate 8s linear infinite;
+  
+}
+
+@keyframes animate {
+  0% {
+      transform: translateX(calc(-99% + 10px))
+  }
+
+  100% {
+      transform: translateX(calc(-99% + 552px))
+  }
+}
+.princesse-img {
+
+height: 60px;
+animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+0% {
+    transform: translateX(calc(-259% + 0px))
+}
+
+100% {
+    transform: translateX(calc(-99% + 552px))
+}
+} 
+.parcour {
+display: flex;
+}
+
+
+
+
+div.button-scores {
+padding: 2rem 10rem 26rem 9rem;
+
+
+}
+button {
+border-radius: 20%;
+padding: 3px 25px 3px 25px;
+text-align: center;
+
+} 
+
+.like {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+  position: absolute;
+  top: 100%;
+  left: 92%;
+  transform: translate(-350%, -80%);
+}
+.anim-like {
+  animation-name: anim-like;
+  animation-duration: 0.8s;
+  animation-timing-function: steps(28);
+}
+@keyframes anim-like {
+  from{background-position: left;}
+  to{background-position: right;}
+}
+
+
+
+footer { 
+  background-color: #F8C477;
+  color: #558B2F;
+
+}
+*/ 
