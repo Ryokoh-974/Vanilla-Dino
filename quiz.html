@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>DinoQuiz - CodeChallenge</title>
   </head>
 
@@ -12,17 +18,11 @@
       <div class="quizz-container">
         <div class="btn-container">
           <div class="btn-border">
-            <button class="counter">Counter: <span id="count">0</span></button>
+            <button class="counter">Score: <span id="count">0</span></button>
           </div>
         </div>
 
         <h2>Dino-code quizz</h2>
-
-        <div class="coucou">
-          <div class="hello">
-            <h1>Hello</h1>
-          </div>
-        </div>
 
         <!--Question 1-->
 
@@ -44,7 +44,7 @@
 
           <div class="answer">
             <label class="btn-answer" for="btn-answer1" name="btn-answer1"
-              >Inline elememts
+              >Inline elements
               <input
                 type="checkbox"
                 id="btn-answer1"
@@ -149,15 +149,16 @@
             class="btn-acordeon"
           />
           <label for="acordeon3"
-            >lorem ipsum dolor sit emet?<i class="bi bi-caret-down-fill"></i
+            ><p>Qu'affiche le code alert("10" + "5")</p>
+            <i class="bi bi-caret-down-fill"></i
           ></label>
 
           <div class="answer">
             <label class="btn-answer" for="btn-answer1" name="btn-answer1"
-              >First
+              >105
               <input
                 type="checkbox"
-                id="btn-answer1"
+                id="btn-answer3"
                 class="question3 true question"
                 onclick="blockCheck3(this)"
               />
@@ -167,7 +168,7 @@
 
           <div class="answer">
             <label class="btn-answer"
-              >Second
+              >"10" + "5"
               <input
                 type="checkbox"
                 class="answer2 question3 question"
@@ -179,7 +180,7 @@
 
           <div class="answer">
             <label class="btn-answer"
-              >Third
+              >"15"
               <input
                 type="checkbox"
                 class="answer3 question3 question"
@@ -195,11 +196,64 @@
           <input
             type="radio"
             name="acordeon"
-            id="acordeon3"
+            id="acordeon4"
             class="btn-acordeon"
           />
-          <label for="acordeon3"
-            >lorem ipsum dolor sit emet?<i class="bi bi-caret-down-fill"></i
+          <label for="acordeon4"
+            ><p>Laquelle de ces syntaxes est correcte ?</p>
+            <i class="bi bi-caret-down-fill"></i
+          ></label>
+
+          <div class="answer">
+            <label class="btn-answer" for="btn-answer1" name="btn-answer1"
+              >&ltimg src="mon-image.jpg" alt="Une image"/&gt;
+              <input
+                type="checkbox"
+                id="btn-answer1"
+                class="question4 true question"
+                onclick="blockCheck4(this)"
+              />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="answer">
+            <label class="btn-answer"
+              >&ltimg&gtsrc="mon-image.jpg" alt="Une image"
+              <input
+                type="checkbox"
+                class="answer2 question4 question"
+                onclick="blockCheck4(this)"
+              />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="answer">
+            <label class="btn-answer"
+              >&ltimg href="mon-image.jpg" alt="Une-image"/&gt
+              <input
+                type="checkbox"
+                class="answer3 question4 question"
+                onclick="blockCheck4(this)"
+              />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 5-->
+
+        <div class="acordeon">
+          <input
+            type="radio"
+            name="acordeon"
+            id="acordeon5"
+            class="btn-acordeon"
+          />
+          <label for="acordeon5"
+            ><p>lorem ipsum dolor sit?</p>
+            <i class="bi bi-caret-down-fill"></i
           ></label>
 
           <div class="answer">
@@ -208,8 +262,8 @@
               <input
                 type="checkbox"
                 id="btn-answer1"
-                class="question3 true question"
-                onclick="blockCheck3(this)"
+                class="question5 question"
+                onclick="blockCheck5(this)"
               />
               <span class="checkmark"></span>
             </label>
@@ -220,8 +274,8 @@
               >Second
               <input
                 type="checkbox"
-                class="answer2 question3 question"
-                onclick="blockCheck3(this)"
+                class="answer2 question5 question"
+                onclick="blockCheck5(this)"
               />
               <span class="checkmark"></span>
             </label>
@@ -232,28 +286,34 @@
               >Third
               <input
                 type="checkbox"
-                class="answer3 question3 question"
-                onclick="blockCheck3(this)"
+                class="true question5 question"
+                onclick="blockCheck5(this)"
               />
               <span class="checkmark"></span>
             </label>
           </div>
         </div>
 
-        <div class="acordeon">
+        <section class="submit-container">
+          <button class="btn-submit">
+            <a href="#" class="all-final">Envoyer </a>
+          </button>
+        </section>
+
+        <!-- <div class="acordeon">
           <input
             type="radio"
             name="acordeon"
-            id="acordeon4"
+            id="acordeon5"
             class="btn-acordeon"
           />
-          <label for="acordeon4"
+          <label for="acordeon5"
             >lorem ipsum dolor sit emet?<i class="bi bi-caret-down-fill"></i
           ></label>
           <div class="answer">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
     <script src="./script.js"></script>
