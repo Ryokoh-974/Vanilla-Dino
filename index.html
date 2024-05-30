@@ -1,74 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>DinoQuiz - CodeChanllenge</title>
-</head>
+  </head>
 
-<header>
+  <header>
     <h1>DinoQuiz - CodeChallenge</h1>
-</header>
+  </header>
 
-
-<body>
+  <body>
     <main>
-        <section>
-            <p><strong>REGLE DU JEU : </strong> vous incarnez le Dino et votre but est de manger une des
-                princesses.<br>Pour cela, il vous faudra répondre à un maximum de bonne réponse, aux questions (minimum
-                7
-                réponses justes).<br>
-                Sélectionnez votre "cible" ci-dessous avant de cliquer sur "JOUER"</p>
-        </section>
+      <section>
+        <p>
+          <strong>REGLE DU JEU : </strong> vous incarnez le Dino et votre but
+          est de manger une des princesses.<br />Pour cela, il vous faudra
+          répondre à un maximum de bonne réponse, aux questions (minimum 7
+          réponses justes).<br />
+          Sélectionnez votre "cible" ci-dessous avant de cliquer sur "JOUER"
+        </p>
+      </section>
 
+      <section>
+        <div class="image-dino-bouge">
+          <img
+            src="/ressources/image/dino.png"
+            class="dino-img"
+            alt="petit dinosaure qui avance de gauche à droite en boucle"
+          />
+        </div>
+      </section>
 
-        <section>
-            <div class="image-dino-bouge">
-                <img src="/ressources/image/dino.png" class="dino-img"
-                    alt="petit dinosaure qui avance de gauche à droite en boucle">
-            </div>
-        </section>
+      <section>
+        <article>
+          <img
+            src="/ressources/image/chemin.PNG"
+            class="chemin-img"
+            alt="c'est un chemin à l'horizontale ou le dinosaure avancera"
+          />
+        </article>
+      </section>
 
+      <!-- Partie antoine-->
+      <section>
+        <div class="image-container">
+          <img
+            class="display-img"
+            src="ressources/image/princess1.PNG"
+            alt="Princesse Alice"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess2.png"
+            alt="Princesse FROG"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess3.PNG"
+            alt="Princesse Mermaid"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess4.PNG"
+            alt="Princesse Aladin"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess5.PNG"
+            alt="Princesse La belle et la bête"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess6.PNG"
+            alt="Princesse Mulan"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess7.PNG"
+            alt="Princesse Tangled"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess8.PNG"
+            alt="Princesse Ralph"
+          />
+          <img
+            class="display-img"
+            src="ressources/image/princess9.PNG"
+            alt="Princesse Blanche Neige"
+          />
+        </div>
+      </section>
+      <!-- Partie antoine-->
 
-        <section>
-            <article>
-                <img src="/ressources/image/chemin.PNG" class="chemin-img"
-                    alt="c'est un chemin à l'horizontale ou le dinosaure avancera">
-            </article>
-        </section>
-
-        <!-- Partie antoine-->
-        <section>
-            <div class="image-container">
-                <img class="display-img" src="ressources/image/princess1.PNG" alt="Princesse Alice">
-                <img class="display-img" src="ressources/image/princess2.png" alt="Princesse FROG">
-                <img class="display-img" src="ressources/image/princess3.PNG" alt="Princesse Mermaid">
-                <img class="display-img" src="ressources/image/princess4.PNG" alt="Princesse Aladin"></li>
-                <img class="display-img" src="ressources/image/princess5.PNG" alt="Princesse La belle et la bête">
-                <img class="display-img" src="ressources/image/princess6.PNG" alt="Princesse Mulan">
-                <img class="display-img" src="ressources/image/princess7.PNG" alt="Princesse Tangled">
-                <img class="display-img" src="ressources/image/princess8.PNG" alt="Princesse Ralph">
-                <img class="display-img" src="ressources/image/princess9.PNG" alt="Princesse Blanche Neige">
-            </div>
-        </section>
-        <!-- Partie antoine-->
-
-        <script src="script.js"></script>
+      <script src="script.js"></script>
     </main>
 
     <nav>
-        <button>
-            <a href="quiz.html">
-                <p><strong>JOUER</strong></p>
-            </a>
-        </button>
+      <button>
+        <a href="quiz.html">
+          <p><strong>JOUER</strong></p>
+        </a>
+      </button>
     </nav>
-
-</body>
-
+  </body>
 </html>
