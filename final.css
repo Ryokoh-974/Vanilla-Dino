@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8C477;
+    overflow-y: hidden !important;
+    max-height: 100% !important;
+}
+
+footer {
+    color: #558B2F;
+}
+
+section>.image-fin-ok>.dino-img {
+    width: 100%;
+}
+
+
+
+
+section {
+    height: 56vh;
+    overflow-y: hidden !important;
+    max-height: 100% !important;
+}
+
+
+button {
+    margin: 0 7rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+a {
+    all: unset
+}
+
+.button-effect {
+    --glow-color: rgb(69, 122, 55);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(182, 182, 37);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.button-effect::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.button-effect:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    font-size: 17px;
+}
+
+.button-effect:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+/*       BOUTON     SHARE    */
+
+.share-img {
+    height: 30px;
+}
+
+footer>div>button {
+    background-color: #558B2F;
+    margin-top: -6px;
+    margin-right: 1rem;
+}
+
+footer>.fin-page {
+    display: flex;
+}
