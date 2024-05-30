@@ -13,20 +13,21 @@ let allFinal = document.querySelector(".all-final");
 // I use forEach to loop through the array and match all elements with the class true and sum 1 to correctAnswer everytime a correct answer is clicked
 let correctAnswer = 0;
 answerCheck.forEach((checkbox) => {
-  checkbox.addEventListener("click", () => {
-    if (checkbox.classList.contains("true")) {
-      correctAnswer++;
-      counter.textContent = correctAnswer;
-      console.log("I am checked with a loop");
-    }
-    if (correctAnswer >= 3) {
-      allFinal.setAttribute("href", "./finalOk.html");
-    } else if (correctAnswer < 3) {
-      allFinal.setAttribute("href", "./finalNok.html");
-    } else {
-      alert("Please answer the questions");
-    }
-  });
+    checkbox.addEventListener("click", () => {
+        if (checkbox.classList.contains("true")) {
+            correctAnswer++;
+            counter.textContent = correctAnswer;
+            console.log("I am checked with a loop");
+        }
+        if (correctAnswer >= 3) {
+            allFinal.setAttribute("href", "./finalOk.html");
+        } else if (correctAnswer < 3) {
+            allFinal.setAttribute("href", "./finalNok.html");
+        } else {
+            alert("Please answer the questions");
+        }
+    });
+});
 
 console.log(correctAnswer);
 
@@ -49,10 +50,10 @@ function blockCheck4(el) {
     const checkbox = document.querySelectorAll(".question4");
     checkbox.forEach((box) => (box.disabled = "disabled"));
 }
-  
-  function blockCheck5(el) {
-  const checkbox = document.querySelectorAll(".question5");
-  checkbox.forEach((box) => (box.disabled = "disabled"));
+
+function blockCheck5(el) {
+    const checkbox = document.querySelectorAll(".question5");
+    checkbox.forEach((box) => (box.disabled = "disabled"));
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -70,13 +71,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 button.classList.add("enabled");
             }
         });
-     
-      const like = document.querySelector('.like');
+    });
+});
+
+const like = document.querySelector('.like');
 
 let countLike = 0;
 like.addEventListener('click', () => {
 
-    if(countLike === 0) {
+    if (countLike === 0) {
         like.classList.toggle('anim-like');
         countLike = 1;
         like.style.backgroundPosition = 'right';
