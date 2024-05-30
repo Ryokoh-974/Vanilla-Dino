@@ -49,8 +49,8 @@ function blockCheck4(el) {
     const checkbox = document.querySelectorAll(".question4");
     checkbox.forEach((box) => (box.disabled = "disabled"));
 }
-
-function blockCheck5(el) {
+  
+  function blockCheck5(el) {
   const checkbox = document.querySelectorAll(".question5");
   checkbox.forEach((box) => (box.disabled = "disabled"));
 }
@@ -70,3 +70,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 button.classList.add("enabled");
             }
         });
+     
+      const like = document.querySelector('.like');
+
+let countLike = 0;
+like.addEventListener('click', () => {
+
+    if(countLike === 0) {
+        like.classList.toggle('anim-like');
+        countLike = 1;
+        like.style.backgroundPosition = 'right';
+    } else {
+        countLike = 0;
+        like.style.backgroundPosition = 'left';
+    }
+
+});
