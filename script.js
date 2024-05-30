@@ -39,3 +39,22 @@ function blockCheck4(el) {
     const checkbox = document.querySelectorAll(".question4");
     checkbox.forEach((box) => (box.disabled = "disabled"));
 }
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const images = document.querySelectorAll('.display-img');
+    const button = document.querySelector(".button")
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            if (image.classList.contains('expanded')) {
+                image.classList.remove('expanded');
+                button.classList.remove("enabled");
+            } else {
+                images.forEach(img => img.classList.remove('expanded'));
+                image.classList.add('expanded');
+                button.classList.add("enabled");
+            }
+        });
+    });
+});
