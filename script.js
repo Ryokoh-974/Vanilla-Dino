@@ -23,66 +23,65 @@ answerCheck.forEach((checkbox) => {
       allFinal.setAttribute("href", "./finalOk.html");
     } else if (correctAnswer < 3) {
       allFinal.setAttribute("href", "./finalNok.html");
-    } else {
-      alert("Please answer the questions");
     }
   });
+});
 
 console.log(correctAnswer);
 
 function blockCheck(el) {
-    const checkbox = document.querySelectorAll(".question1");
-    checkbox.forEach((box) => (box.disabled = "disabled"));
+  const checkbox = document.querySelectorAll(".question1");
+  checkbox.forEach((box) => (box.disabled = "disabled"));
 }
 
 function blockCheck2(el) {
-    const checkbox = document.querySelectorAll(".question2");
-    checkbox.forEach((box) => (box.disabled = "disabled"));
+  const checkbox = document.querySelectorAll(".question2");
+  checkbox.forEach((box) => (box.disabled = "disabled"));
 }
 
 function blockCheck3(el) {
-    const checkbox = document.querySelectorAll(".question3");
-    checkbox.forEach((box) => (box.disabled = "disabled"));
+  const checkbox = document.querySelectorAll(".question3");
+  checkbox.forEach((box) => (box.disabled = "disabled"));
 }
 
 function blockCheck4(el) {
-    const checkbox = document.querySelectorAll(".question4");
-    checkbox.forEach((box) => (box.disabled = "disabled"));
+  const checkbox = document.querySelectorAll(".question4");
+  checkbox.forEach((box) => (box.disabled = "disabled"));
 }
-  
-  function blockCheck5(el) {
+
+function blockCheck5(el) {
   const checkbox = document.querySelectorAll(".question5");
   checkbox.forEach((box) => (box.disabled = "disabled"));
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const images = document.querySelectorAll('.display-img');
-    const button = document.querySelector(".button")
+document.addEventListener("DOMContentLoaded", (event) => {
+  const images = document.querySelectorAll(".display-img");
+  const button = document.querySelector(".button");
+});
 
-    images.forEach(image => {
-        image.addEventListener('click', () => {
-            if (image.classList.contains('expanded')) {
-                image.classList.remove('expanded');
-                button.classList.remove("enabled");
-            } else {
-                images.forEach(img => img.classList.remove('expanded'));
-                image.classList.add('expanded');
-                button.classList.add("enabled");
-            }
-        });
-     
-      const like = document.querySelector('.like');
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    if (image.classList.contains("expanded")) {
+      image.classList.remove("expanded");
+      button.classList.remove("enabled");
+    } else {
+      images.forEach((img) => img.classList.remove("expanded"));
+      image.classList.add("expanded");
+      button.classList.add("enabled");
+    }
+  });
+});
+
+const like = document.querySelector(".like");
 
 let countLike = 0;
-like.addEventListener('click', () => {
-
-    if(countLike === 0) {
-        like.classList.toggle('anim-like');
-        countLike = 1;
-        like.style.backgroundPosition = 'right';
-    } else {
-        countLike = 0;
-        like.style.backgroundPosition = 'left';
-    }
-
+like.addEventListener("click", () => {
+  if (countLike === 0) {
+    like.classList.toggle("anim-like");
+    countLike = 1;
+    like.style.backgroundPosition = "right";
+  } else {
+    countLike = 0;
+    like.style.backgroundPosition = "left";
+  }
 });
