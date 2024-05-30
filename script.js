@@ -23,11 +23,13 @@ answerCheck.forEach((checkbox) => {
       allFinal.setAttribute("href", "./finalOk.html");
     } else if (correctAnswer < 3) {
       allFinal.setAttribute("href", "./finalNok.html");
+    } else {
+      alert("Please answer the questions");
     }
   });
-});
 
-console.log(correctAnswer);
+  console.log(correctAnswer);
+});
 
 function blockCheck(el) {
   const checkbox = document.querySelectorAll(".question1");
@@ -57,18 +59,18 @@ function blockCheck5(el) {
 document.addEventListener("DOMContentLoaded", (event) => {
   const images = document.querySelectorAll(".display-img");
   const button = document.querySelector(".button");
-});
 
-images.forEach((image) => {
-  image.addEventListener("click", () => {
-    if (image.classList.contains("expanded")) {
-      image.classList.remove("expanded");
-      button.classList.remove("enabled");
-    } else {
-      images.forEach((img) => img.classList.remove("expanded"));
-      image.classList.add("expanded");
-      button.classList.add("enabled");
-    }
+  images.forEach((image) => {
+    image.addEventListener("click", () => {
+      if (image.classList.contains("expanded")) {
+        image.classList.remove("expanded");
+        button.classList.remove("enabled");
+      } else {
+        images.forEach((img) => img.classList.remove("expanded"));
+        image.classList.add("expanded");
+        button.classList.add("enabled");
+      }
+    });
   });
 });
 
