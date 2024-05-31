@@ -7,7 +7,7 @@
 }
 
 /*                 Titre du jeu              */
-header > h1 {
+header>h1 {
   font-family: "silkscreen";
   border: solid 1px;
   color: black;
@@ -22,6 +22,7 @@ body {
 }
 
 /*                 Règle du jeu              */
+
 section > p {
   border: solid 1px;
   display: flex;
@@ -96,19 +97,17 @@ section > div {
 .button {
   grid-column: 2/3;
   display: block;
-
   background-color: black;
   border-radius: 50px;
   margin-top: 2rem;
   pointer-events: none;
-
-  /*partie javascript*/
   opacity: 0.5;
 }
 
 .button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.369);
 }
+
 
 .button > a {
   text-decoration: none;
@@ -145,6 +144,7 @@ button.counter {
   border-top: 20px solid brown;*/
 }
 
+
 .quizz-container > h2 {
   font-size: 2.5rem;
   text-align: center;
@@ -165,6 +165,7 @@ button.counter {
   background-color: hsla(31, 97%, 12%, 0.893);
   color: #fff;
   cursor: pointer;
+
   margin-bottom: 2px;
   transition: all 500ms ease-in;
 }
@@ -178,7 +179,7 @@ p > span {
   color: rgb(225, 146, 227);
 }
 
-.acordeon > label:hover {
+.acordeon>label:hover {
   background-color: hsla(32, 77%, 17%, 0.893);
 }
 
@@ -194,6 +195,7 @@ p > span {
 .btn-acordeon {
   display: none;
 }
+
 .btn-answer {
   font-size: 1.2rem;
   font-weight: 700;
@@ -212,7 +214,7 @@ section.submit-container {
   justify-content: center;
 }
 
-section > .btn-submit {
+section>.btn-submit {
   padding: 10px;
   font-weight: 600;
   font-size: 1.3rem;
@@ -222,21 +224,28 @@ section > .btn-submit {
   border-image-width: 4px;
   transition: 300ms ease-in;
 }
+
 .btn-submit:hover {
   border-image: linear-gradient(90deg, green, yellow, rgb(75, 11, 11)) 1;
   border-image-width: 5px;
   font-size: 1.4rem;
 }
 
+
 /*                      parti   Anthony            */
-
-nav {
-  background-color: #f8c477;
-  color: #558b2f;
-}
-
 section > div {
   height: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  .quizz-container {
+    width: 70%;
+  }
+}
+
+nav {
+  background-color: #F8C477;
+  color: #558B2F;
 }
 
 .dino-img {
@@ -251,7 +260,6 @@ section > div {
 
   100% {
     transform: translateX(calc(-99% + 552px));
-  }
 }
 
 .princesse-img {
@@ -266,6 +274,7 @@ section > div {
 
   100% {
     transform: translateX(calc(-99% + 552px));
+    transform: translateX(calc(-259% + 0px));
   }
 }
 
@@ -324,6 +333,7 @@ footer {
     }
   }
 
+
   .princesse-img {
     height: 60px;
     animation: animate 16s linear infinite;
@@ -338,3 +348,9 @@ footer {
     }
   }
 }
+  
+footer {
+  background-color: #F8C477;
+  color: #558B2F;
+}
+
