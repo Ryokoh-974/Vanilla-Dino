@@ -18,15 +18,11 @@ section>.image-fin-ok>.dino-img {
     width: 100%;
 }
 
-
-
-
 section {
     height: 56vh;
     overflow-y: hidden !important;
     max-height: 100% !important;
 }
-
 
 button {
     margin: 0 7rem;
@@ -89,7 +85,6 @@ a {
 }
 
 /*       BOUTON     SHARE    */
-
 .share-img {
     height: 30px;
 }
