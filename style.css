@@ -10,7 +10,6 @@
 header>h1 {
   font-family: "silkscreen";
   border: solid 1px;
-  display: flex;
   color: black;
   margin: 1rem;
   font-size: 30px;
@@ -23,7 +22,8 @@ body {
 }
 
 /*                 Règle du jeu              */
-section>p {
+
+section > p {
   border: solid 1px;
   display: flex;
   color: black;
@@ -31,7 +31,7 @@ section>p {
 }
 
 /*                dino qui bouge de gauche à droite              */
-section>div {
+section > div {
   height: 50px;
 }
 
@@ -84,8 +84,7 @@ section>div {
 .expanded {
   /*partie javascript*/
   transform: scale(1.2);
-  box-shadow: 0px 0px 10px #009B4D;
-
+  box-shadow: 0px 0px 10px #009b4d;
 }
 
 .button.enabled {
@@ -98,22 +97,19 @@ section>div {
 .button {
   grid-column: 2/3;
   display: block;
-
   background-color: black;
   border-radius: 50px;
   margin-top: 2rem;
   pointer-events: none;
-
-  /*partie javascript*/
   opacity: 0.5;
-
 }
 
 .button:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.369);
 }
 
-.button>a {
+
+.button > a {
   text-decoration: none;
   color: red;
 }
@@ -141,11 +137,15 @@ button.counter {
 .quizz-container {
   background-color: hsl(36, 90%, 72%);
   max-width: 90svw;
-  min-height: 800px;
   margin: 0 auto;
+  box-shadow: -5px -4px 7px 2px hsla(32, 77%, 17%, 0.893);
+  border-radius: 20px;
+  /*border-left: 20px solid brown;
+  border-top: 20px solid brown;*/
 }
 
-.quizz-container>h2 {
+
+.quizz-container > h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -157,7 +157,7 @@ button.counter {
 }
 
 /* Accordeon Styles */
-.acordeon>label {
+.acordeon > label {
   display: flex;
   justify-content: space-between;
   height: 6rem;
@@ -165,16 +165,17 @@ button.counter {
   background-color: hsla(31, 97%, 12%, 0.893);
   color: #fff;
   cursor: pointer;
-  margin-bottom: 4px;
+
+  margin-bottom: 2px;
   transition: all 500ms ease-in;
 }
 
-.acordeon>label>p {
+.acordeon > label > p {
   font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
-p>span {
+p > span {
   color: rgb(225, 146, 227);
 }
 
@@ -183,7 +184,7 @@ p>span {
 }
 
 /* Hide Answers */
-.acordeon>.answer {
+.acordeon > .answer {
   margin: 0 20px;
   max-height: 0px;
   overflow: hidden;
@@ -202,7 +203,7 @@ p>span {
 }
 
 /* Show Answer when checked */
-.btn-acordeon:checked~.answer {
+.btn-acordeon:checked ~ .answer {
   max-height: 100px;
   padding: 16px 0;
 }
@@ -230,22 +231,21 @@ section>.btn-submit {
   font-size: 1.4rem;
 }
 
+
+/*                      parti   Anthony            */
+section > div {
+  height: 50px;
+}
+
 @media only screen and (min-width: 600px) {
   .quizz-container {
     width: 70%;
   }
 }
 
-
-/*                      parti   Anthony            */
-
 nav {
   background-color: #F8C477;
   color: #558B2F;
-}
-
-section>div {
-  height: 50px;
 }
 
 .dino-img {
@@ -255,12 +255,11 @@ section>div {
 
 @keyframes animate {
   0% {
-    transform: translateX(calc(-99% + 10px))
+    transform: translateX(calc(-99% + 10px));
   }
 
   100% {
-    transform: translateX(calc(-99% + 552px))
-  }
+    transform: translateX(calc(-99% + 552px));
 }
 
 .princesse-img {
@@ -270,11 +269,12 @@ section>div {
 
 @keyframes animate {
   0% {
-    transform: translateX(calc(-259% + 0px))
+    transform: translateX(calc(-259% + 0px));
   }
 
   100% {
-    transform: translateX(calc(-99% + 552px))
+    transform: translateX(calc(-99% + 552px));
+    transform: translateX(calc(-259% + 0px));
   }
 }
 
@@ -309,8 +309,48 @@ section>div {
   }
 }
 
+footer {
+  background-color: #f8c477;
+  color: #558b2f;
+}
 
+@media only screen and (min-width: 600px) {
+  .quizz-container {
+    width: 70%;
+  }
+
+  .dino-img {
+    height: 60px;
+    animation: animate 16s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateX(calc(-99% + 10px));
+    }
+
+    100% {
+      transform: translateX(calc(-99% + 2000px));
+    }
+  }
+
+
+  .princesse-img {
+    height: 60px;
+    animation: animate 16s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateX(calc(-259% + 0px));
+    }
+
+    100% {
+      transform: translateX(calc(-99% + 2000px));
+    }
+  }
+}
+  
 footer {
   background-color: #F8C477;
   color: #558B2F;
 }
+
