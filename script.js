@@ -23,13 +23,15 @@ answerCheck.forEach((checkbox) => {
       allFinal.setAttribute("href", "./finalOk.html");
     } else if (correctAnswer < 3) {
       allFinal.setAttribute("href", "./finalNok.html");
-    } else {
-      alert("Please answer the questions");
+    } else if (correctAnswer === 0) {
+      allFinal.setAttribute("href", "./index.html");
     }
   });
 
   console.log(correctAnswer);
 });
+
+// Disable input checkbox when checked
 
 function blockCheck(el) {
   const checkbox = document.querySelectorAll(".question1");
@@ -56,6 +58,7 @@ function blockCheck5(el) {
   checkbox.forEach((box) => (box.disabled = "disabled"));
 }
 
+// Partie Antoine
 document.addEventListener("DOMContentLoaded", (event) => {
   const images = document.querySelectorAll(".display-img");
   const button = document.querySelector(".button");

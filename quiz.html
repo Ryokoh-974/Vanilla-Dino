@@ -59,7 +59,7 @@
             class="btn-acordeon"
           />
           <label for="acordeon1"
-            ><p>
+            ><p id="#random-question1">
               Les elements
               <span>&lta&gt &ltinput&gt &ltimg&gt &ltbutton&gt</span>
               sont...?
@@ -68,7 +68,11 @@
           ></label>
 
           <div class="answer">
-            <label class="btn-answer" for="btn-answer1" name="btn-answer1"
+            <label
+              class="btn-answer"
+              for="btn-answer1"
+              name="btn-answer1"
+              id="#question1-answer1"
               >Inline elements
               <input
                 type="checkbox"
@@ -81,7 +85,7 @@
           </div>
 
           <div class="answer">
-            <label class="btn-answer"
+            <label class="btn-answer" id="#question1-answer2"
               >Online elements
               <input
                 type="checkbox"
@@ -93,7 +97,7 @@
           </div>
 
           <div class="answer">
-            <label class="btn-answer"
+            <label class="btn-answer" id="#question1-answer3"
               >Block elements
               <input
                 type="checkbox"
@@ -114,7 +118,9 @@
             class="btn-acordeon"
           />
           <label for="acordeon2"
-            ><p>Que ça veut dire, je ecrit javascript vanilla</p>
+            ><p class="random-question2">
+              Que ça veut dire, je ecrit javascript vanilla
+            </p>
             <i class="bi bi-caret-down-fill"></i
           ></label>
 
@@ -123,6 +129,7 @@
               class="btn-answer"
               for="acordeon2-answer2"
               name="acordeon2-answer2"
+              id="#question2-answer1"
               >j'ai mange la glace de vanilla quand je ecrit mon code
               <input
                 type="checkbox"
@@ -277,13 +284,13 @@
             class="btn-acordeon"
           />
           <label for="acordeon5"
-            ><p>lorem ipsum dolor sit?</p>
+            ><p>Comment tu resoudrais ton problem de code?</p>
             <i class="bi bi-caret-down-fill"></i
           ></label>
 
           <div class="answer">
             <label class="btn-answer" for="btn-answer1" name="btn-answer1"
-              >First
+              >Je appelle Kevin de la WildCodeSchool
               <input
                 type="checkbox"
                 id="btn-answer1"
@@ -296,7 +303,7 @@
 
           <div class="answer">
             <label class="btn-answer"
-              >Second
+              >Jai parle avec chatGPT
               <input
                 type="checkbox"
                 class="answer2 question5 question"
@@ -308,7 +315,7 @@
 
           <div class="answer">
             <label class="btn-answer"
-              >Third
+              >J'ai fait de recherches
               <input
                 type="checkbox"
                 class="true question5 question"
@@ -318,6 +325,8 @@
             </label>
           </div>
         </div>
+
+        <!-- Question 6 -->
 
         <section class="submit-container">
           <button class="btn-submit">
