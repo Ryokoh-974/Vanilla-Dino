@@ -23,7 +23,7 @@ body {
 
 /*                 Règle du jeu              */
 
-section > p {
+section>p {
   border: solid 1px;
   display: flex;
   color: black;
@@ -31,7 +31,7 @@ section > p {
 }
 
 /*                dino qui bouge de gauche à droite              */
-section > div {
+section>div {
   height: 50px;
 }
 
@@ -109,7 +109,7 @@ section > div {
 }
 
 
-.button > a {
+.button>a {
   text-decoration: none;
   color: red;
 }
@@ -145,7 +145,7 @@ button.counter {
 }
 
 
-.quizz-container > h2 {
+.quizz-container>h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -157,7 +157,7 @@ button.counter {
 }
 
 /* Accordeon Styles */
-.acordeon > label {
+.acordeon>label {
   display: flex;
   justify-content: space-between;
   height: 6rem;
@@ -170,12 +170,12 @@ button.counter {
   transition: all 500ms ease-in;
 }
 
-.acordeon > label > p {
+.acordeon>label>p {
   font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
-p > span {
+p>span {
   color: rgb(225, 146, 227);
 }
 
@@ -184,7 +184,7 @@ p > span {
 }
 
 /* Hide Answers */
-.acordeon > .answer {
+.acordeon>.answer {
   margin: 0 20px;
   max-height: 0px;
   overflow: hidden;
@@ -203,7 +203,7 @@ p > span {
 }
 
 /* Show Answer when checked */
-.btn-acordeon:checked ~ .answer {
+.btn-acordeon:checked~.answer {
   max-height: 100px;
   padding: 16px 0;
 }
@@ -233,7 +233,7 @@ section>.btn-submit {
 
 
 /*                      parti   Anthony            */
-section > div {
+section>div {
   height: 50px;
 }
 
@@ -260,97 +260,98 @@ nav {
 
   100% {
     transform: translateX(calc(-99% + 552px));
-}
-
-.princesse-img {
-  height: 60px;
-  animation: animate 8s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(calc(-259% + 0px));
   }
-
-  100% {
-    transform: translateX(calc(-99% + 552px));
-    transform: translateX(calc(-259% + 0px));
-  }
-}
-
-.parcour {
-  display: flex;
-}
-
-.like {
-  cursor: pointer;
-  height: 100px;
-  width: 100px;
-  background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
-  position: absolute;
-  top: 100%;
-  left: 92%;
-  transform: translate(-350%, -80%);
-}
-
-.anim-like {
-  animation-name: anim-like;
-  animation-duration: 0.8s;
-  animation-timing-function: steps(28);
-}
-
-@keyframes anim-like {
-  from {
-    background-position: left;
-  }
-
-  to {
-    background-position: right;
-  }
-}
-
-footer {
-  background-color: #f8c477;
-  color: #558b2f;
-}
-
-@media only screen and (min-width: 600px) {
-  .quizz-container {
-    width: 70%;
-  }
-
-  .dino-img {
-    height: 60px;
-    animation: animate 16s linear infinite;
-  }
-  @keyframes animate {
-    0% {
-      transform: translateX(calc(-99% + 10px));
-    }
-
-    100% {
-      transform: translateX(calc(-99% + 2000px));
-    }
-  }
-
 
   .princesse-img {
     height: 60px;
-    animation: animate 16s linear infinite;
+    animation: animate 8s linear infinite;
   }
+
   @keyframes animate {
     0% {
       transform: translateX(calc(-259% + 0px));
     }
 
     100% {
-      transform: translateX(calc(-99% + 2000px));
+      transform: translateX(calc(-99% + 552px));
+      transform: translateX(calc(-259% + 0px));
     }
   }
-}
-  
-footer {
-  background-color: #F8C477;
-  color: #558B2F;
-}
 
+  .parcour {
+    display: flex;
+  }
+
+  .like {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+    position: absolute;
+    top: 100%;
+    left: 92%;
+    transform: translate(-350%, -80%);
+  }
+
+  .anim-like {
+    animation-name: anim-like;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(28);
+  }
+
+  @keyframes anim-like {
+    from {
+      background-position: left;
+    }
+
+    to {
+      background-position: right;
+    }
+  }
+
+  footer {
+    background-color: #f8c477;
+    color: #558b2f;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .quizz-container {
+      width: 70%;
+    }
+
+    .dino-img {
+      height: 60px;
+      animation: animate 16s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateX(calc(-99% + 10px));
+      }
+
+      100% {
+        transform: translateX(calc(-99% + 2000px));
+      }
+    }
+
+
+    .princesse-img {
+      height: 60px;
+      animation: animate 16s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateX(calc(-259% + 0px));
+      }
+
+      100% {
+        transform: translateX(calc(-99% + 2000px));
+      }
+    }
+  }
+
+  footer {
+    background-color: #F8C477;
+    color: #558B2F;
+  }

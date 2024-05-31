@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -10,166 +11,110 @@
         href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet" />
     <title>DinoQuiz - CodeChallenge</title>
-  </head>
+</head>
 
 <body>
     <main>
 
-      <nav>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#558B2F"
-            fill-opacity="1"
-            d="M0,256L36.9,224L73.8,0L110.8,32L147.7,32L184.6,320L221.5,64L258.5,288L295.4,160L332.3,128L369.2,64L406.2,256L443.1,160L480,288L516.9,32L553.8,64L590.8,160L627.7,96L664.6,64L701.5,224L738.5,128L775.4,256L812.3,224L849.2,96L886.2,128L923.1,288L960,256L996.9,64L1033.8,256L1070.8,192L1107.7,224L1144.6,32L1181.5,224L1218.5,128L1255.4,288L1292.3,32L1329.2,64L1366.2,192L1403.1,224L1440,96L1440,0L1403.1,0L1366.2,0L1329.2,0L1292.3,0L1255.4,0L1218.5,0L1181.5,0L1144.6,0L1107.7,0L1070.8,0L1033.8,0L996.9,0L960,0L923.1,0L886.2,0L849.2,0L812.3,0L775.4,0L738.5,0L701.5,0L664.6,0L627.7,0L590.8,0L553.8,0L516.9,0L480,0L443.1,0L406.2,0L369.2,0L332.3,0L295.4,0L258.5,0L221.5,0L184.6,0L147.7,0L110.8,0L73.8,0L36.9,0L0,0Z"
-          ></path>
-        </svg>
+        <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#558B2F" fill-opacity="1"
+                    d="M0,256L36.9,224L73.8,0L110.8,32L147.7,32L184.6,320L221.5,64L258.5,288L295.4,160L332.3,128L369.2,64L406.2,256L443.1,160L480,288L516.9,32L553.8,64L590.8,160L627.7,96L664.6,64L701.5,224L738.5,128L775.4,256L812.3,224L849.2,96L886.2,128L923.1,288L960,256L996.9,64L1033.8,256L1070.8,192L1107.7,224L1144.6,32L1181.5,224L1218.5,128L1255.4,288L1292.3,32L1329.2,64L1366.2,192L1403.1,224L1440,96L1440,0L1403.1,0L1366.2,0L1329.2,0L1292.3,0L1255.4,0L1218.5,0L1181.5,0L1144.6,0L1107.7,0L1070.8,0L1033.8,0L996.9,0L960,0L923.1,0L886.2,0L849.2,0L812.3,0L775.4,0L738.5,0L701.5,0L664.6,0L627.7,0L590.8,0L553.8,0L516.9,0L480,0L443.1,0L406.2,0L369.2,0L332.3,0L295.4,0L258.5,0L221.5,0L184.6,0L147.7,0L110.8,0L73.8,0L36.9,0L0,0Z">
+                </path>
+            </svg>
 
-        <section class="parcour">
-          <div class="image-dino-bouge">
-            <img
-              src="./ressources/image/dino.png"
-              class="dino-img"
-              alt="petit dinosaure qui avance de gauche à droite en boucle"
-            />
-          </div>
+            <section class="parcour">
+                <div class="image-dino-bouge">
+                    <img src="./ressources/image/dino.png" class="dino-img"
+                        alt="petit dinosaure qui avance de gauche à droite en boucle" />
+                </div>
 
-          <div class="image-princesse-bouge">
-            <img
-              src="./ressources/image/princess1.PNG"
-              class="princesse-img"
-              alt="petite princesse qui avance de gauche à droite en boucle"
-            />
-          </div>
-        </section>
-      </nav>
-      <div class="quizz-container">
-        <div class="btn-container">
-          <div class="btn-border">
-            <button class="counter">Score: <span id="count">0</span></button>
-          </div>
-        </div>
+                <div class="image-princesse-bouge">
+                    <img src="./ressources/image/princess1.PNG" class="princesse-img"
+                        alt="petite princesse qui avance de gauche à droite en boucle" />
+                </div>
+            </section>
+        </nav>
+        <div class="quizz-container">
+            <div class="btn-container">
+                <div class="btn-border">
+                    <button class="counter">Score: <span id="count">0</span></button>
+                </div>
+            </div>
 
-        <!--Question 1-->
+            <!--Question 1-->
 
-        <div class="acordeon">
-          <input
-            type="radio"
-            name="acordeon"
-            id="acordeon1"
-            class="btn-acordeon"
-          />
-          <label for="acordeon1"
-            ><p id="#random-question1">
-              Les elements
-              <span>&lta&gt &ltinput&gt &ltimg&gt &ltbutton&gt</span>
-              sont...?
-            </p>
-            <i class="bi bi-caret-down-fill"></i
-          ></label>
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="acordeon1" class="btn-acordeon" />
+                <label for="acordeon1">
+                    <p id="#random-question1">
+                        Les elements
+                        <span>&lta&gt &ltinput&gt &ltimg&gt &ltbutton&gt</span>
+                        sont...?
+                    </p>
+                    <i class="bi bi-caret-down-fill"></i>
+                </label>
 
-          <div class="answer">
-            <label
-              class="btn-answer"
-              for="btn-answer1"
-              name="btn-answer1"
-              id="#question1-answer1"
-              >Inline elements
-              <input
-                type="checkbox"
-                id="btn-answer1"
-                class="question1 true question"
-                onclick="blockCheck(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+                <div class="answer">
+                    <label class="btn-answer" for="btn-answer1" name="btn-answer1" id="#question1-answer1">Inline
+                        elements
+                        <input type="checkbox" id="btn-answer1" class="question1 true question"
+                            onclick="blockCheck(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-          <div class="answer">
-            <label class="btn-answer" id="#question1-answer2"
-              >Online elements
-              <input
-                type="checkbox"
-                class="answer2 question1 question"
-                onclick="blockCheck(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+                <div class="answer">
+                    <label class="btn-answer" id="#question1-answer2">Online elements
+                        <input type="checkbox" class="answer2 question1 question" onclick="blockCheck(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-          <div class="answer">
-            <label class="btn-answer" id="#question1-answer3"
-              >Block elements
-              <input
-                type="checkbox"
-                class="answer3 question1 question"
-                onclick="blockCheck(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </div>
-        <!--Question  2-->
+                <div class="answer">
+                    <label class="btn-answer" id="#question1-answer3">Block elements
+                        <input type="checkbox" class="answer3 question1 question" onclick="blockCheck(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <!--Question  2-->
 
-        <div class="acordeon">
-          <input
-            type="radio"
-            name="acordeon"
-            id="acordeon2"
-            class="btn-acordeon"
-          />
-          <label for="acordeon2"
-            ><p class="random-question2">
-              Que ça veut dire, je ecrit javascript vanilla
-            </p>
-            <i class="bi bi-caret-down-fill"></i
-          ></label>
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="acordeon2" class="btn-acordeon" />
+                <label for="acordeon2">
+                    <p class="random-question2">
+                        Que ça veut dire, je ecrit javascript vanilla
+                    </p>
+                    <i class="bi bi-caret-down-fill"></i>
+                </label>
 
-          <div class="answer">
-            <label
-              class="btn-answer"
-              for="acordeon2-answer2"
-              name="acordeon2-answer2"
-              id="#question2-answer1"
-              >j'ai mange la glace de vanilla quand je ecrit mon code
-              <input
-                type="checkbox"
-                id="acordeon2-answer2"
-                class="answer1 question2 question"
-                onclick="blockCheck2(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+                <div class="answer">
+                    <label class="btn-answer" for="acordeon2-answer2" name="acordeon2-answer2"
+                        id="#question2-answer1">j'ai mange la glace de vanilla quand je ecrit mon code
+                        <input type="checkbox" id="acordeon2-answer2" class="answer1 question2 question"
+                            onclick="blockCheck2(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-          <div class="answer">
-            <label class="btn-answer" for="true-answer"
-              >Pure Javascript, sans libreries ou frameworks
-              <input
-                type="checkbox"
-                id="true-answer"
-                class="true question2 question"
-                onclick="blockCheck2(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+                <div class="answer">
+                    <label class="btn-answer" for="true-answer">Pure Javascript, sans libreries ou frameworks
+                        <input type="checkbox" id="true-answer" class="true question2 question"
+                            onclick="blockCheck2(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-          <div class="answer">
-            <label
-              class="btn-answer"
-              for="acordeon2-answer2"
-              name="acordeon2-answer2"
-              >Le logo de Javascript est colour vanilla
-              <input
-                type="checkbox"
-                id="acordeon2-answer2"
-                class="answer1 question2 question"
-                onclick="blockCheck2(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </div>
+                <div class="answer">
+                    <label class="btn-answer" for="acordeon2-answer2" name="acordeon2-answer2">Le logo de Javascript est
+                        colour vanilla
+                        <input type="checkbox" id="acordeon2-answer2" class="answer1 question2 question"
+                            onclick="blockCheck2(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
 
             <!--Question 3-->
 
@@ -235,57 +180,37 @@
                 </div>
             </div>
 
-        <!-- Question 5-->
+            <!-- Question 5-->
 
-        <div class="acordeon">
-          <input
-            type="radio"
-            name="acordeon"
-            id="acordeon5"
-            class="btn-acordeon"
-          />
-          <label for="acordeon5"
-            ><p>Comment tu resoudrais ton problem de code?</p>
-            <i class="bi bi-caret-down-fill"></i
-          ></label>
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="acordeon5" class="btn-acordeon" />
+                <label for="acordeon5">
+                    <p>Comment tu resoudrais ton problem de code?</p>
+                    <i class="bi bi-caret-down-fill"></i>
+                </label>
 
-          <div class="answer">
-            <label class="btn-answer" for="btn-answer1" name="btn-answer1"
-              >Je appelle Kevin de la WildCodeSchool
-              <input
-                type="checkbox"
-                id="btn-answer1"
-                class="question5 question"
-                onclick="blockCheck5(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+                <div class="answer">
+                    <label class="btn-answer" for="btn-answer1" name="btn-answer1">Je appelle Kevin de la WildCodeSchool
+                        <input type="checkbox" id="btn-answer1" class="question5 question"
+                            onclick="blockCheck5(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-          <div class="answer">
-            <label class="btn-answer"
-              >Jai parle avec chatGPT
-              <input
-                type="checkbox"
-                class="answer2 question5 question"
-                onclick="blockCheck5(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+                <div class="answer">
+                    <label class="btn-answer">Jai parle avec chatGPT
+                        <input type="checkbox" class="answer2 question5 question" onclick="blockCheck5(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-          <div class="answer">
-            <label class="btn-answer"
-              >J'ai fait de recherches
-              <input
-                type="checkbox"
-                class="true question5 question"
-                onclick="blockCheck5(this)"
-              />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-        </div>
+                <div class="answer">
+                    <label class="btn-answer">J'ai fait de recherches
+                        <input type="checkbox" class="true question5 question" onclick="blockCheck5(this)" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
 
             <section class="submit-container">
                 <button class="btn-submit">
@@ -307,5 +232,6 @@
     </footer>
 
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
