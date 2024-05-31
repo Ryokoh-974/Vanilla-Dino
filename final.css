@@ -116,6 +116,7 @@ footer>.fin-page {
     animation-timing-function: steps(28);
 }
 
+
 @keyframes anim-like {
     from {
         background-position: left;

@@ -1,5 +1,4 @@
 /* Monica Quiz javascript */
-
 const counter = document.getElementById("count");
 
 // Make an array for all element with the class question
