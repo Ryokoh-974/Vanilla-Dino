@@ -1,9 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*                 Titre du jeu              */
@@ -14,8 +14,6 @@ header>h1 {
     color: #5b3a29;
     margin: 1rem;
     font-size: 2rem;
-
-
 }
 
 body {
@@ -25,13 +23,11 @@ body {
 }
 
 /*                 Règle du jeu              */
-
 h2 {
     text-align: center;
     font-size: bold;
     margin: 0 auto;
     color: #014700;
-
 }
 
 section>p {
@@ -43,7 +39,6 @@ section>p {
     letter-spacing: 0.05em;
     line-height: 1.5;
     font-size: 1.1rem;
-
 }
 
 /*                dino qui bouge de gauche à droite             */
@@ -56,26 +51,25 @@ section>p {
     letter-spacing: 0.05em;
     line-height: 1.5;
     font-size: 1.1rem;
-
 }
 
 section>div {
-    height: 50px;
+  height: 50px;
 }
 
 .dino-img {
-    height: 60px;
-    animation: animate 2.5s linear infinite;
+  height: 60px;
+  animation: animate 2.5s linear infinite;
 }
 
 @keyframes animate {
-    0% {
-        transform: translateX(calc(0% + 10px));
-    }
+  0% {
+    transform: translateX(calc(0% + 10px));
+  }
 
-    100% {
-        transform: translateX(calc(100% + 999px));
-    }
+  100% {
+    transform: translateX(calc(100% + 999px));
+  }
 }
 
 .chemin-img {
@@ -85,6 +79,7 @@ section>div {
 /*                         Avatar DISNEY           */
 /* Partie Antoine */
 .image-container {
+
     width: 50%;
     margin: 0 auto;
     margin-top: 2rem;
@@ -93,7 +88,6 @@ section>div {
     justify-content: center;
     gap: 0.5rem 1.5rem;
     flex-grow: 1;
-
 }
 
 
@@ -154,19 +148,14 @@ section>div {
 
 
 .display-img:hover {
-
     border-color: white;
     transform: scale(1.1) rotate(-2deg);
     filter: opacity(100%);
-
     border: solid 3px #FAF5E9;
     box-shadow: 0px 0px 10px #228B22;
     inset: 0px 0px 10px #228B22;
-
     transition: 0.2s;
-
     transform: scale(1.2);
-
 }
 
 .expanded {
@@ -174,37 +163,33 @@ section>div {
     transform: scale(1.2);
     box-shadow: 0px 0px 10px #009B4D;
     filter: opacity(100%);
-
 }
 
 .button.enabled {
-    /*partie javascript*/
-    pointer-events: auto;
-    opacity: 1;
-    /*quand une image est a la classe expanded*/
+  /*partie javascript*/
+  pointer-events: auto;
+  opacity: 1;
+  /*quand une image est a la classe expanded*/
 }
 
 .button {
-    grid-column: 2/3;
-    display: block;
-
-    background-color: black;
-    border-radius: 50px;
-    margin-top: 2rem;
-    pointer-events: none;
-
-    /*partie javascript*/
-    opacity: 0.5;
-
+  grid-column: 2/3;
+  display: block;
+  background-color: black;
+  border-radius: 50px;
+  margin-top: 2rem;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .button:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.369);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.369);
 }
 
+
 .button>a {
-    text-decoration: none;
-    color: red;
+  text-decoration: none;
+  color: red;
 }
 
 
@@ -214,20 +199,20 @@ section>div {
 
 /* Partie Monica Quiz*/
 button.counter {
-    padding: 10px;
-    margin: 1rem 0;
-    background-color: rgb(250, 209, 5);
-    color: hsla(32, 77%, 17%, 0.893);
-    font-size: 1.7rem;
-    font-weight: 600;
-    border-image: linear-gradient(45deg, brown, yellow, green) 1;
-    border-image-width: 5px;
+  padding: 10px;
+  margin: 1rem 0;
+  background-color: rgb(250, 209, 5);
+  color: hsla(32, 77%, 17%, 0.893);
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-image: linear-gradient(45deg, brown, yellow, green) 1;
+  border-image-width: 5px;
 }
 
 .btn-container {
-    width: 100%;
-    height: 100px;
-    text-align: center;
+  width: 100%;
+  height: 100px;
+  text-align: center;
 }
 
 .quizz-container {
@@ -237,54 +222,56 @@ button.counter {
     margin: 0 auto;
 }
 
+
 .quizz-container>h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .acordeon {
-    width: 100%;
-    background-color: hsl(120, 19%, 93%);
+  width: 100%;
+  background-color: hsl(120, 19%, 93%);
 }
 
 /* Accordeon Styles */
 .acordeon>label {
-    display: flex;
-    justify-content: space-between;
-    height: 6rem;
-    padding: 1rem;
-    background-color: hsla(31, 97%, 12%, 0.893);
-    color: #fff;
-    cursor: pointer;
-    margin-bottom: 4px;
-    transition: all 500ms ease-in;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 1rem;
+  background-color: hsla(31, 97%, 12%, 0.893);
+  color: #fff;
+  cursor: pointer;
+
+  margin-bottom: 2px;
+  transition: all 500ms ease-in;
 }
 
 .acordeon>label>p {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 p>span {
-    color: rgb(225, 146, 227);
+  color: rgb(225, 146, 227);
 }
 
 .acordeon>label:hover {
-    background-color: hsla(32, 77%, 17%, 0.893);
+  background-color: hsla(32, 77%, 17%, 0.893);
 }
 
 /* Hide Answers */
 .acordeon>.answer {
-    margin: 0 20px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 300ms ease;
+  margin: 0 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
 }
 
 /* hide input button */
 .btn-acordeon {
-    display: none;
+  display: none;
 }
 
 .btn-answer {
@@ -295,8 +282,8 @@ p>span {
 
 /* Show Answer when checked */
 .btn-acordeon:checked~.answer {
-    max-height: 100px;
-    padding: 16px 0;
+  max-height: 100px;
+  padding: 16px 0;
 }
 
 /*  button submit */
@@ -322,59 +309,58 @@ section>.btn-submit {
     font-size: 1.4rem;
 }
 
-@media only screen and (min-width: 600px) {
-    .quizz-container {
-        width: 70%;
-    }
-}
-
 
 /*                      parti   Anthony            */
-
-nav {
-    background-color: #F8C477;
-    color: #558B2F;
+section>div {
+  height: 50px;
 }
 
-section>div {
-    height: 50px;
+@media only screen and (min-width: 600px) {
+  .quizz-container {
+    width: 70%;
+  }
+}
+
+nav {
+  background-color: #F8C477;
+  color: #558B2F;
 }
 
 .dino-img {
-    height: 60px;
-    animation: animate 8s linear infinite;
+  height: 60px;
+  animation: animate 8s linear infinite;
 }
 
 @keyframes animate {
-    0% {
-        transform: translateX(calc(-99% + 10px))
-    }
+  0% {
+    transform: translateX(calc(-99% + 10px));
+  }
 
-    100% {
-        transform: translateX(calc(-99% + 552px))
-    }
-}
+  100% {
+    transform: translateX(calc(-99% + 552px));
+  }
 
-.princesse-img {
+  .princesse-img {
     height: 60px;
     animation: animate 8s linear infinite;
-}
+  }
 
-@keyframes animate {
+  @keyframes animate {
     0% {
-        transform: translateX(calc(-259% + 0px))
+      transform: translateX(calc(-259% + 0px));
     }
 
     100% {
-        transform: translateX(calc(-99% + 552px))
+      transform: translateX(calc(-99% + 552px));
+      transform: translateX(calc(-259% + 0px));
     }
-}
+  }
 
-.parcour {
+  .parcour {
     display: flex;
-}
+  }
 
-.like {
+  .like {
     cursor: pointer;
     height: 100px;
     width: 100px;
@@ -383,26 +369,67 @@ section>div {
     top: 100%;
     left: 92%;
     transform: translate(-350%, -80%);
-}
+  }
 
-.anim-like {
+  .anim-like {
     animation-name: anim-like;
     animation-duration: 0.8s;
     animation-timing-function: steps(28);
-}
+  }
 
-@keyframes anim-like {
+  @keyframes anim-like {
     from {
-        background-position: left;
+      background-position: left;
     }
 
     to {
-        background-position: right;
+      background-position: right;
     }
-}
+  }
+
+  footer {
+    background-color: #f8c477;
+    color: #558b2f;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .quizz-container {
+      width: 70%;
+    }
+
+    .dino-img {
+      height: 60px;
+      animation: animate 16s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateX(calc(-99% + 10px));
+      }
+
+      100% {
+        transform: translateX(calc(-99% + 2000px));
+      }
+    }
 
 
-footer {
+    .princesse-img {
+      height: 60px;
+      animation: animate 16s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateX(calc(-259% + 0px));
+      }
+
+      100% {
+        transform: translateX(calc(-99% + 2000px));
+      }
+    }
+  }
+
+  footer {
     background-color: #F8C477;
     color: #558B2F;
-}
+  }
