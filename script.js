@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const images = document.querySelectorAll('.display-img');
     const button = document.querySelector(".button")
 
+
     images.forEach(image => {
         image.addEventListener('click', () => {
             if (image.classList.contains('expanded')) {
