@@ -315,12 +315,6 @@ section>div {
   height: 50px;
 }
 
-@media only screen and (min-width: 600px) {
-  .quizz-container {
-    width: 70%;
-  }
-}
-
 nav {
   background-color: #F8C477;
   color: #558B2F;
@@ -411,7 +405,6 @@ footer {
       transform: translateX(calc(-99% + 2000px));
     }
   }
-
 
   .princesse-img {
     height: 60px;
