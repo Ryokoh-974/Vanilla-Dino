@@ -103,6 +103,7 @@ footer>div>button {
 footer>.fin-page {
     display: flex;
 }
+
 .like {
     cursor: pointer;
     height: 100px;
@@ -112,19 +113,28 @@ footer>.fin-page {
     top: 100%;
     left: 92%;
     transform: translate(-50%, -63%);
-  }
-  .anim-like {
+}
+
+.anim-like {
     animation-name: anim-like;
     animation-duration: 0.8s;
-    animation-timing-function: steps(28); 
-  }
-  @keyframes anim-like {
-    from{background-position: left;}
-    to{background-position: right;}
-  }
-  .loose {
+    animation-timing-function: steps(28);
+}
+
+@keyframes anim-like {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
+
+.loose {
     text-align: center;
-  }
-  .win {
+}
+
+.win {
     text-align: center;
-  }
+}
