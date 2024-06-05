@@ -2,16 +2,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    background-color: #F8C477;
+}
+h1 {
+    text-align: center;
 }
 
 .tableau {
     border-collapse: collapse;
     width: 100%;
+   
+ 
 
 }
 
 .tableau ul,
-.tableau li {
-    border: 1px solid black;
-    padding: 7px;
+.score
+ {
+    border: 3px solid black;
+    padding: 5px;
+    margin: 15px;
+    
+    
+}
+.score {
+    display: inline;
+    display: flex;
+    gap: 14rem;
+    margin-right: 1rem;
+   
 }

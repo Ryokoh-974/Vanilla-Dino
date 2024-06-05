@@ -339,7 +339,7 @@ nav {
   100% {
     transform: translateX(calc(-99% + 552px));
   }
-
+}
   .princesse-img {
     height: 60px;
     animation: animate 8s linear infinite;
@@ -352,7 +352,7 @@ nav {
 
     100% {
       transform: translateX(calc(-99% + 552px));
-      transform: translateX(calc(-259% + 0px));
+   
     }
   }
 
@@ -428,7 +428,7 @@ nav {
       }
     }
   }
-
+  
   footer {
     background-color: #F8C477;
     color: #558B2F;
