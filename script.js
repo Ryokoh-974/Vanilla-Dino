@@ -60,22 +60,41 @@ function blockCheck5(el) {
 }
 
 // Partie Antoine
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const images = document.querySelectorAll(".display-img");
   const button = document.querySelector(".button");
 
+  const princessePage2 = document.querySelector(".image-princesse-bouge")
+  const princesse = document.createElement("img");
+
+
+
   images.forEach((image) => {
+
     image.addEventListener("click", () => {
+
       if (image.classList.contains("expanded")) {
         image.classList.remove("expanded");
         button.classList.remove("enabled");
+
       } else {
         images.forEach((img) => img.classList.remove("expanded"));
         image.classList.add("expanded");
         button.classList.add("enabled");
+        localStorage.setItem("princesse", image.src);
+
+
       }
+
+
     });
   });
+
+  princesse.src = localStorage.getItem("princesse");
+  princesse.className = "princesse-img";
+  princessePage2.appendChild(princesse);
+
 });
 
 const like = document.querySelector(".like");
