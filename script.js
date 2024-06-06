@@ -1,8 +1,7 @@
 /* Monica Quiz javascript */
 let counter = document.getElementById("count");
+
 //let scoreDisplay = document.querySelector('.tableau');
-
-
 
 // Make an array for all element with the class question
 const answerCheck = document.querySelectorAll(".question");
@@ -14,6 +13,7 @@ let allFinal = document.querySelector(".all-final");
 
 // I use forEach to loop through the array and match all elements with the class true and sum 1 to correctAnswer everytime a correct answer is clicked
 let correctAnswer = 0;
+
 document.addEventListener("DOMContentLoaded", (event) => {
   answerCheck.forEach((checkbox) => {
     checkbox.addEventListener("click", () => {
@@ -51,26 +51,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // 
       // scoreDisplay.textContent = localStorage.getItem("countering");
 
-
-
     });
 
   });
 
-
-
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Disable input checkbox when checked
@@ -104,22 +89,41 @@ function blockCheck5(el) {
 
 
 // Partie Antoine
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const images = document.querySelectorAll(".display-img");
   const button = document.querySelector(".button");
 
+  const princessePage2 = document.querySelector(".image-princesse-bouge")
+  const princesse = document.createElement("img");
+
+
+
   images.forEach((image) => {
+
     image.addEventListener("click", () => {
+
       if (image.classList.contains("expanded")) {
         image.classList.remove("expanded");
         button.classList.remove("enabled");
+
       } else {
         images.forEach((img) => img.classList.remove("expanded"));
         image.classList.add("expanded");
         button.classList.add("enabled");
+        localStorage.setItem("princesse", image.src);
+
+
       }
+
+
     });
   });
+
+  princesse.src = localStorage.getItem("princesse");
+  princesse.className = "princesse-img";
+  princessePage2.appendChild(princesse);
+
 });
 
 const like = document.querySelector(".like");
