@@ -19,7 +19,6 @@ header > h1 {
 body {
   background-color: #f8c477;
   width: 100vw;
-  height: 100vh;
 }
 
 /*                 Règle du jeu              */
@@ -408,7 +407,7 @@ footer {
     animation: animate 16s linear infinite;
   }
 
-  .section.return-main {
+  div.return-main {
     margin-right: 100px;
   }
 
