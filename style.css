@@ -19,7 +19,7 @@ header>h1 {
 body {
   background-color: #f8c477;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /*                 Règle du jeu              */
@@ -53,13 +53,18 @@ section>p {
   font-size: 1.1rem;
 }
 
-section>div {
+/* section>div {
   height: 50px;
-}
+} */
 
 .dino-img {
   height: 60px;
-  animation: animate 2.5s linear infinite;
+  animation: animate 5s linear infinite;
+}
+
+#dino-img {
+  height: 60px;
+  margin-left: 0rem;
 }
 
 @keyframes animate {
@@ -79,7 +84,8 @@ section>div {
 /*                         Avatar DISNEY           */
 /* Partie Antoine */
 .image-container {
-
+  border: black solid 2px;
+  background-position: center;
   width: 50%;
   margin: 0 auto;
   margin-top: 2rem;
@@ -92,8 +98,10 @@ section>div {
 
 
 .display-img {
-  width: 100%;
-  height: 90px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* height: 90px; */
   border: 1px solid black;
   margin: auto;
   border: solid 3px #FAF5E9;
@@ -122,16 +130,18 @@ section>div {
   }
 
   .image-container {
-
-    width: 70%;
+    /* width: 70%; */
     gap: 0.5rem 4rem;
     grid-template-columns: repeat(3, 20%);
   }
 
   .display-img {
     margin-bottom: 2rem;
-    width: 70%;
-    height: 200px;
+    /* width: 70%; */
+    width: 120px;
+    height: 120px;
+    /* height: 200px; */
+    object-fit: cover;
   }
 
   .display-img:hover {
@@ -192,10 +202,10 @@ section>div {
   color: red;
 }
 
-
-
-
 /* Partie Antoine */
+
+
+
 
 /* Partie Monica Quiz*/
 button.counter {
@@ -320,7 +330,7 @@ nav {
   color: #558B2F;
 }
 
-.dino-img {
+/* .dino-img {
   height: 60px;
   animation: animate 8s linear infinite;
 }
@@ -333,7 +343,7 @@ nav {
   100% {
     transform: translateX(calc(-99% + 552px));
   }
-}
+} */
 
 .princesse-img {
   height: 60px;
@@ -381,48 +391,64 @@ nav {
   }
 }
 
-footer {
+
+
+/*      FOOTER    de l'index       */
+
+footer>.index-herbe {
   background-color: #f8c477;
   color: #558b2f;
+  margin-top: 20rem;
 }
 
-@media only screen and (min-width: 600px) {
-  .quizz-container {
-    width: 70%;
+footer>section>.fin-page {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem;
+}
+
+.share-img {
+  height: 48px;
+}
+
+footer>section>div>p {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+
+.like {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+  position: absolute;
+  top: 100%;
+  left: 94%;
+  transform: translate(-50%, 240%);
+}
+
+.anim-like {
+  animation-name: anim-like;
+  animation-duration: 0.8s;
+  animation-timing-function: steps(28);
+}
+
+
+@keyframes anim-like {
+  from {
+    background-position: left;
   }
 
-  .dino-img {
-    height: 60px;
-    animation: animate 16s linear infinite;
-  }
-
-  @keyframes animate {
-    0% {
-      transform: translateX(calc(-99% + 10px));
-    }
-
-    100% {
-      transform: translateX(calc(-99% + 2000px));
-    }
-  }
-
-  .princesse-img {
-    height: 60px;
-    animation: animate 16s linear infinite;
-  }
-
-  @keyframes animate {
-    0% {
-      transform: translateX(calc(-259% + 0px));
-    }
-
-    100% {
-      transform: translateX(calc(-99% + 2000px));
-    }
+  to {
+    background-position: right;
   }
 }
 
-footer {
-  background-color: #F8C477;
-  color: #558B2F;
+.loose {
+  text-align: center;
+}
+
+.win {
+  text-align: center;
 }
