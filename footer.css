@@ -1,0 +1,52 @@
+ /*      FOOTER    de l'index       */
+
+ footer>.index-herbe {
+     background-color: #f8c477;
+     color: #558b2f;
+     margin-top: rem;
+ }
+
+ footer>section>.fin-page {
+     display: flex;
+     justify-content: space-around;
+     margin-right: 2rem;
+ }
+
+ .share-img {
+     height: 3rem;
+
+ }
+
+ footer>section>div>p {
+     font-size: 1.1rem;
+     margin-top: 0.8rem;
+ }
+
+
+ .like {
+     cursor: pointer;
+     height: 100px;
+     width: 100px;
+     background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+     position: absolute;
+     top: 100%;
+     left: 94%;
+     transform: translate(-50%, 240%);
+ }
+
+ .anim-like {
+     animation-name: anim-like;
+     animation-duration: 0.8s;
+     animation-timing-function: steps(28);
+ }
+
+
+ @keyframes anim-like {
+     from {
+         background-position: left;
+     }
+
+     to {
+         background-position: right;
+     }
+ }
