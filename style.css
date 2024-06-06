@@ -59,7 +59,7 @@ section>div {
     height: 50px;
 }
 
-.dino-img {
+/* .dino-img {
     height: 60px;
     animation: animate 2.5s linear infinite;
 }
@@ -72,13 +72,15 @@ section>div {
     100% {
         transform: translateX(calc(100% + 999px));
     }
-}
+} */
+
+
 
 .image-dino-bouge {
-    width: 80px;
+    width: 100%;
     height: 80px;
-    background-repeat: no-repeat;
-    animation: animate 10s steps(12) infinite;
+    background-image: url(/ressources/image/walking_trex-ezgif.com-gif-to-sprite-converter.png);
+
 
 }
 
