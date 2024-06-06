@@ -1,5 +1,5 @@
 /* Monica Quiz javascript */
-const counter = document.getElementById("count");
+let counter = document.getElementById("count");
 
 // Make an array for all element with the class question
 const answerCheck = document.querySelectorAll(".question");
@@ -17,6 +17,7 @@ answerCheck.forEach((checkbox) => {
       correctAnswer++;
       counter.textContent = correctAnswer;
       console.log("I am checked with a loop");
+
     }
     if (correctAnswer >= 3) {
       allFinal.setAttribute("href", "./finalOk.html");
@@ -29,6 +30,7 @@ answerCheck.forEach((checkbox) => {
 
   console.log(correctAnswer);
 });
+
 
 // Disable input checkbox when checked
 
@@ -89,3 +91,22 @@ like.addEventListener("click", () => {
     like.style.backgroundPosition = "left";
   }
 });
+
+
+/*          DINO  qui avance en fonction de bonnes réponses  */
+
+// let counter = 0;
+
+// if (counter.innerHTML === 0) {
+//   document.getElementById("dino-img").style.marginLeft = "0rem";
+// } else if (counter.innerHTML === 1) {
+//   document.getElementById("dino-img").style.marginLeft = "2rem";
+// } else if (counter.innerHTML === 2) {
+//   document.getElementById("dino-img").style.marginLeft = "4rem";
+// } else if (counter.innerHTML === 3) {
+//   document.getElementById("dino-img").style.marginLeft = "6rem";
+// } else if (counter.innerHTML === 4) {
+//   document.getElementById("dino-img").style.marginLeft = "8rem";
+// } else if (counter.innerHTML === 5) {
+//   document.getElementById("dino-img").style.marginLeft = "10rem";
+// }
