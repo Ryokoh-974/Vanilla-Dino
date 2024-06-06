@@ -7,7 +7,7 @@
 }
 
 /*                 Titre du jeu              */
-header>h1 {
+header > h1 {
   font-family: "silkscreen";
   border: solid 1px #FAF5E9;
   text-align: center;
@@ -19,7 +19,6 @@ header>h1 {
 body {
   background-color: #f8c477;
   width: 100vw;
-  /* height: 100vh; */
 }
 
 
@@ -32,7 +31,7 @@ h2 {
   color: #014700;
 }
 
-section>p {
+section > p {
   border: solid 1px #FAF5E9;
   color: #014700;
   margin: 1rem;
@@ -55,6 +54,14 @@ section>p {
   font-size: 1.1rem;
 }
 
+
+/*                    !!!!!!!!!!!            a   CHECK            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    */
+section > div {
+  height: 50px;
+}
+ /*                    !!!!!!!!!!!            a   CHECK            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    */
+
+
 .dino-img {
   height: 60px;
   animation: animate 5s linear infinite;
@@ -63,6 +70,11 @@ section>p {
 #dino-img {
   height: 60px;
   margin-left: 0rem;
+}
+
+#dino-img {
+  height: 60px;
+
 }
 
 @keyframes animate {
@@ -177,12 +189,12 @@ section>p {
 
 @media screen and (min-width: 600px) {
 
-  header>h1 {
+  header > h1 {
     font-size: 2.5rem;
     padding: 1rem;
   }
 
-  section>p,
+  section > p,
   .selection {
     margin: 1rem auto;
     padding: 2rem 3rem;
@@ -257,7 +269,7 @@ section>p {
 }
 
 
-.button>a {
+.button > a {
   text-decoration: none;
   color: red;
 }
@@ -291,7 +303,6 @@ button.counter {
   margin: 0 auto;
 }
 
-
 .quizz-container>h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -304,38 +315,34 @@ button.counter {
 }
 
 /* Accordeon Styles */
-.acordeon>label {
-    display: flex;
-    justify-content: space-between;
-    height: 6rem;
-    padding: 1rem;
-    background-color: hsla(31, 97%, 12%, 0.893);
-    color: #fff;
-    cursor: pointer;
-
-    margin-bottom: 2px;
-    transition: all 500ms ease-in;
+.acordeon > label {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 1rem;
+  background-color: hsla(31, 97%, 12%, 0.893);
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: all 500ms ease-in;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
-.acordeon>label>p {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
+label > span {
+  color: rgb(225, 146, 227);
 }
 
-p>span {
-    color: rgb(225, 146, 227);
-}
-
-.acordeon>label:hover {
-    background-color: hsla(32, 77%, 17%, 0.893);
+.acordeon > label:hover {
+  background-color: hsla(32, 77%, 17%, 0.893);
 }
 
 /* Hide Answers */
-.acordeon>.answer {
-    margin: 0 20px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 300ms ease;
+.acordeon > .answer {
+  margin: 0 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
 }
 
 /* hide input button */
@@ -350,18 +357,18 @@ p>span {
 }
 
 /* Show Answer when checked */
-.btn-acordeon:checked~.answer {
-    max-height: 100px;
-    padding: 16px 0;
+.btn-acordeon:checked ~ .answer {
+  max-height: 100px;
+  padding: 16px 0;
 }
 
 /*  button submit */
-section.submit-container {
+div.submit-container {
   display: flex;
   justify-content: center;
 }
 
-section>.btn-submit {
+div > .btn-submit {
   padding: 10px;
   font-weight: 600;
   font-size: 1.3rem;
@@ -378,41 +385,31 @@ section>.btn-submit {
   font-size: 1.4rem;
 }
 
+div.return-main {
+  text-align: end;
+  margin-top: -50px;
+  margin-right: 20svw;
+}
+
+.bi-arrow-right-circle {
+  font-size: 3rem;
+  color: #FAF5E9;
+}
 
 /*                      parti   Anthony            */
 section>div {
     height: 50px;
 }
 
-
-  
-  
-  
 @media only screen and (min-width: 600px) {
     .quizz-container {
         width: 70%;
     }
 
-  
 nav {
     background-color: #F8C477;
     color: #558B2F;
 }
-
-/* .dino-img {
-  height: 60px;
-  animation: animate 8s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(calc(-99% + 10px));
-  }
-
-  100% {
-    transform: translateX(calc(-99% + 552px));
-  }
-} */
 
 .princesse-img {
   height: 60px;
@@ -479,6 +476,17 @@ footer>section>.fin-page {
 .share-img {
   height: 48px;
 }
+
+  
+  div.return-main {
+    margin-right: 100px;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateX(calc(-99% + 10px));
+    }
+
 
 footer>section>div>p {
   font-size: 1.1rem;
