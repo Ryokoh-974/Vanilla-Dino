@@ -2,14 +2,15 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./ressources/image/logo-dino-ico50px.jpg" type="image/x-icon">
     <title>DinoQuiz - CodeChallenge</title>
 </head>
 
@@ -22,17 +23,17 @@
                 </path>
             </svg>
 
-            <section class="parcour">
+            <div class="parcour">
                 <div class="image-dino-bouge">
-                    <img src="./ressources/image/dino.png" class="dino-img"
-                        alt="petit dinosaure qui avance de gauche à droite en boucle" />
+                    <img src="./ressources/image/dino.png" id="dino-img" class="img-dino"
+                        alt="petit dinosaure qui avance de gauche à droite en boucle">
                 </div>
 
                 <div class="image-princesse-bouge">
                     <img src="./ressources/image/princess1.PNG" class="princesse-img"
-                        alt="petite princesse qui avance de gauche à droite en boucle" />
+                        alt="petite princesse qui avance de gauche à droite en boucle">
                 </div>
-            </section>
+            </div>
         </nav>
         <div class="quizz-container">
             <div class="btn-container">
@@ -44,35 +45,33 @@
             <!--Question 1-->
 
             <div class="acordeon">
-                <input type="radio" name="acordeon" id="acordeon1" class="btn-acordeon" />
+                <input type="radio" id="acordeon1" class="btn-acordeon">
                 <label for="acordeon1">
-                    <p id="#random-question1">
-                        Les elements
-                        <span>&lta&gt &ltinput&gt &ltimg&gt &ltbutton&gt</span>
-                        sont...?
-                    </p>
+                    Les elements
+                    <span>&lt;a&gt; &lt;input&gt; &lt;img&gt; &lt;button&gt;</span>
+                    sont...?
+
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer" for="btn-answer1" name="btn-answer1" id="#question1-answer1">Inline
+                    <label class="btn-answer">Inline
                         elements
-                        <input type="checkbox" id="btn-answer1" class="question1 true question"
-                            onclick="blockCheck(this)" />
+                        <input type="checkbox" class="question1 true question" onclick="blockCheck(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer" id="#question1-answer2">Online elements
-                        <input type="checkbox" class="answer2 question1 question" onclick="blockCheck(this)" />
+                    <label class="btn-answer">Online elements
+                        <input type="checkbox" class="answer2 question1 question" onclick="blockCheck(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer" id="#question1-answer3">Block elements
-                        <input type="checkbox" class="answer3 question1 question" onclick="blockCheck(this)" />
+                    <label class="btn-answer">Block elements
+                        <input type="checkbox" class="answer3 question1 question" onclick="blockCheck(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -80,36 +79,32 @@
             <!--Question  2-->
 
             <div class="acordeon">
-                <input type="radio" name="acordeon" id="acordeon2" class="btn-acordeon" />
+                <input type="radio" name="acordeon" id="acordeon2" class="btn-acordeon">
                 <label for="acordeon2">
-                    <p class="random-question2">
-                        Que ça veut dire, je ecrit javascript vanilla
-                    </p>
+                    Que ça veut dire, je ecrit javascript vanilla
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer" for="acordeon2-answer2" name="acordeon2-answer2"
-                        id="#question2-answer1">j'ai mange la glace de vanilla quand je ecrit mon code
-                        <input type="checkbox" id="acordeon2-answer2" class="answer1 question2 question"
-                            onclick="blockCheck2(this)" />
+                    <label class="btn-answer" for="btn-answer2">j'ai
+                        mange la glace de vanilla quand je ecrit mon code
+                        <input type="checkbox" id="btn-answer2" class="answer1 question2 question"
+                            onclick="blockCheck2(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer" for="true-answer">Pure Javascript, sans libreries ou frameworks
-                        <input type="checkbox" id="true-answer" class="true question2 question"
-                            onclick="blockCheck2(this)" />
+                    <label class="btn-answer">Pure Javascript, sans libreries ou frameworks
+                        <input type="checkbox" class="true question2 question" onclick="blockCheck2(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer" for="acordeon2-answer2" name="acordeon2-answer2">Le logo de Javascript est
+                    <label class="btn-answer">Le logo de Javascript est
                         colour vanilla
-                        <input type="checkbox" id="acordeon2-answer2" class="answer1 question2 question"
-                            onclick="blockCheck2(this)" />
+                        <input type="checkbox" class="answer1 question2 question" onclick="blockCheck2(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -118,30 +113,30 @@
             <!--Question 3-->
 
             <div class="acordeon">
-                <input type="radio" name="acordeon" id="acordeon3" class="btn-acordeon" />
+                <input type="radio" name="acordeon" id="acordeon3" class="btn-acordeon">
                 <label for="acordeon3">
-                    <p>Qu'affiche le code alert("10" + "5")</p>
+                    Qu'affiche le code alert("10" + "5")
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer" for="btn-answer1" name="btn-answer1">105
+                    <label class="btn-answer">105
                         <input type="checkbox" id="btn-answer3" class="question3 true question"
-                            onclick="blockCheck3(this)" />
+                            onclick="blockCheck3(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
                     <label class="btn-answer">"10" + "5"
-                        <input type="checkbox" class="answer2 question3 question" onclick="blockCheck3(this)" />
+                        <input type="checkbox" class="answer2 question3 question" onclick="blockCheck3(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
                     <label class="btn-answer">"15"
-                        <input type="checkbox" class="answer3 question3 question" onclick="blockCheck3(this)" />
+                        <input type="checkbox" class="answer3 question3 question" onclick="blockCheck3(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -149,31 +144,30 @@
 
             <!--Question 4-->
             <div class="acordeon">
-                <input type="radio" name="acordeon" id="acordeon4" class="btn-acordeon" />
+                <input type="radio" name="acordeon" id="acordeon4" class="btn-acordeon">
                 <label for="acordeon4">
-                    <p>Laquelle de ces syntaxes est correcte ?</p>
+                    Laquelle de ces syntaxes est correcte ?
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer" for="btn-answer1" name="btn-answer1">&ltimg src="mon-image.jpg" alt="Une
-                        image"/&gt;
-                        <input type="checkbox" id="btn-answer1" class="question4 true question"
-                            onclick="blockCheck4(this)" />
+                    <label class="btn-answer">&lt;img src="mon-image.jpg" alt="Une
+                        image"&gt;;
+                        <input type="checkbox" class="question4 true question" onclick="blockCheck4(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer">&ltimg&gtsrc="mon-image.jpg" alt="Une image"
-                        <input type="checkbox" class="answer2 question4 question" onclick="blockCheck4(this)" />
+                    <label class="btn-answer">&lt;img&gt;src="mon-image.jpg" alt="Une image"&gt;
+                        <input type="checkbox" class="answer2 question4 question" onclick="blockCheck4(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer">&ltimg href="mon-image.jpg" alt="Une-image"/&gt
-                        <input type="checkbox" class="answer3 question4 question" onclick="blockCheck4(this)" />
+                    <label class="btn-answer">&lt;img href="mon-image.jpg" alt="Une-image"/&gt;
+                        <input type="checkbox" class="answer3 question4 question" onclick="blockCheck4(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -182,40 +176,42 @@
             <!-- Question 5-->
 
             <div class="acordeon">
-                <input type="radio" name="acordeon" id="acordeon5" class="btn-acordeon" />
+                <input type="radio" name="acordeon" id="acordeon5" class="btn-acordeon">
                 <label for="acordeon5">
-                    <p>Comment tu resoudrais ton problem de code?</p>
+                    Comment tu resoudrais ton problem de code?
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer" for="btn-answer1" name="btn-answer1">Je appelle Kevin de la WildCodeSchool
-                        <input type="checkbox" id="btn-answer1" class="question5 question"
-                            onclick="blockCheck5(this)" />
+                    <label class="btn-answer">Je appelle Kevin de la WildCodeSchool
+                        <input type="checkbox" class="question5 question" onclick="blockCheck5(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
                     <label class="btn-answer">Jai parle avec chatGPT
-                        <input type="checkbox" class="answer2 question5 question" onclick="blockCheck5(this)" />
+                        <input type="checkbox" class="answer2 question5 question" onclick="blockCheck5(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
                     <label class="btn-answer">J'ai fait de recherches
-                        <input type="checkbox" class="true question5 question" onclick="blockCheck5(this)" />
+                        <input type="checkbox" class="true question5 question" onclick="blockCheck5(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
             </div>
 
-            <section class="submit-container">
-                <button class="btn-submit">
+            <div class="submit-container">
+                <div class="btn-submit">
                     <a href="#" class="all-final">Envoyer </a>
-                </button>
-            </section>
+                </div>
+            </div>
+        </div>
+        <div class="return-main">
+            <a href="./index.html"><i class="bi bi-arrow-right-circle"></i></a>
         </div>
 
     </main>

@@ -7,7 +7,7 @@
 }
 
 /*                 Titre du jeu              */
-header>h1 {
+header > h1 {
   font-family: "silkscreen";
   border: solid 1px #FAF5E9;
   text-align: center;
@@ -30,7 +30,7 @@ h2 {
   color: #014700;
 }
 
-section>p {
+section > p {
   border: solid 1px #FAF5E9;
   color: #014700;
   margin: 1rem;
@@ -53,13 +53,18 @@ section>p {
   font-size: 1.1rem;
 }
 
-section>div {
+section > div {
   height: 50px;
 }
 
 .dino-img {
   height: 60px;
   animation: animate 2.5s linear infinite;
+}
+
+#dino-img {
+  height: 60px;
+
 }
 
 @keyframes animate {
@@ -106,12 +111,12 @@ section>div {
 
 @media screen and (min-width: 600px) {
 
-  header>h1 {
+  header > h1 {
     font-size: 2.5rem;
     padding: 1rem;
   }
 
-  section>p,
+  section > p,
   .selection {
     margin: 1rem auto;
     padding: 2rem 3rem;
@@ -187,7 +192,7 @@ section>div {
 }
 
 
-.button>a {
+.button > a {
   text-decoration: none;
   color: red;
 }
@@ -223,7 +228,7 @@ button.counter {
 }
 
 
-.quizz-container>h2 {
+.quizz-container > h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -235,7 +240,7 @@ button.counter {
 }
 
 /* Accordeon Styles */
-.acordeon>label {
+.acordeon > label {
   display: flex;
   justify-content: space-between;
   height: 6rem;
@@ -243,26 +248,24 @@ button.counter {
   background-color: hsla(31, 97%, 12%, 0.893);
   color: #fff;
   cursor: pointer;
-
   margin-bottom: 2px;
   transition: all 500ms ease-in;
-}
-
-.acordeon>label>p {
   font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
-p>span {
+
+
+label > span {
   color: rgb(225, 146, 227);
 }
 
-.acordeon>label:hover {
+.acordeon > label:hover {
   background-color: hsla(32, 77%, 17%, 0.893);
 }
 
 /* Hide Answers */
-.acordeon>.answer {
+.acordeon > .answer {
   margin: 0 20px;
   max-height: 0px;
   overflow: hidden;
@@ -281,18 +284,18 @@ p>span {
 }
 
 /* Show Answer when checked */
-.btn-acordeon:checked~.answer {
+.btn-acordeon:checked ~ .answer {
   max-height: 100px;
   padding: 16px 0;
 }
 
 /*  button submit */
-section.submit-container {
+div.submit-container {
   display: flex;
   justify-content: center;
 }
 
-section>.btn-submit {
+div > .btn-submit {
   padding: 10px;
   font-weight: 600;
   font-size: 1.3rem;
@@ -309,11 +312,20 @@ section>.btn-submit {
   font-size: 1.4rem;
 }
 
+div.return-main {
+  text-align: end;
+  margin-top: -50px;
+  margin-right: 20svw;
+}
+
+.bi-arrow-right-circle {
+  font-size: 3rem;
+  color: #FAF5E9;
+}
+
 
 /*                      parti   Anthony            */
-section>div {
-  height: 50px;
-}
+
 
 nav {
   background-color: #F8C477;
@@ -394,6 +406,10 @@ footer {
   .dino-img {
     height: 60px;
     animation: animate 16s linear infinite;
+  }
+
+  .section.return-main {
+    margin-right: 100px;
   }
 
   @keyframes animate {

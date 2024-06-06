@@ -6,8 +6,7 @@
 
 body {
     background-color: #F8C477;
-    overflow-y: hidden !important;
-    max-height: 100% !important;
+    height: 100svh;
 }
 
 footer {
@@ -15,14 +14,14 @@ footer {
 }
 
 section>.image-fin-ok>.dino-img {
-    width: 100%;
+    width: 100svw;
 }
 
-section {
-    height: 56vh;
-    overflow-y: hidden !important;
-    max-height: 100% !important;
-}
+/* section {
+    height: 56svh;
+    overflow-y: hidden;
+    
+} */
 
 button {
     margin: 0 7rem;
@@ -133,4 +132,8 @@ footer>.fin-page {
 
 .win {
     text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+   
 }

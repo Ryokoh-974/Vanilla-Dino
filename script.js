@@ -1,34 +1,77 @@
 /* Monica Quiz javascript */
-const counter = document.getElementById("count");
+let counter = document.getElementById("count");
+//let scoreDisplay = document.querySelector('.tableau');
+
+
 
 // Make an array for all element with the class question
 const answerCheck = document.querySelectorAll(".question");
 const submitContainer = document.querySelector(".submit-container");
-const buttonSubmit = document.querySelector("btn-submit");
+const buttonSubmit = document.querySelector(".btn-submit");
 let allFinal = document.querySelector(".all-final");
 
 // Make a counter for the correct answers
 
 // I use forEach to loop through the array and match all elements with the class true and sum 1 to correctAnswer everytime a correct answer is clicked
 let correctAnswer = 0;
-answerCheck.forEach((checkbox) => {
-  checkbox.addEventListener("click", () => {
-    if (checkbox.classList.contains("true")) {
-      correctAnswer++;
-      counter.textContent = correctAnswer;
-      console.log("I am checked with a loop");
-    }
-    if (correctAnswer >= 3) {
-      allFinal.setAttribute("href", "./finalOk.html");
-    } else if (correctAnswer < 3) {
-      allFinal.setAttribute("href", "./finalNok.html");
-    } else if (correctAnswer === 0) {
-      allFinal.setAttribute("href", "./index.html");
-    }
+document.addEventListener("DOMContentLoaded", (event) => {
+  answerCheck.forEach((checkbox) => {
+    checkbox.addEventListener("click", () => {
+      if (checkbox.classList.contains("true")) {
+        correctAnswer++;
+        counter.textContent = correctAnswer;
+        console.log((counter));
+
+        // const scorePage2 = document.createElement("p");
+        // scoreDisplay.appendChild(scorePage2);
+
+        // localStorage.setItem("countering", counter.innerHTML);
+
+      }
+      if (correctAnswer === 1) {
+        document.getElementById("dino-img").style.marginLeft = "16svw";
+      } else if (correctAnswer === 2) {
+        document.getElementById("dino-img").style.marginLeft = "32svw"
+      } else if (correctAnswer === 3) {
+        document.getElementById("dino-img").style.marginLeft = "48svw"
+      } else if (correctAnswer === 4) {
+        document.getElementById("dino-img").style.marginLeft = "50svw"
+      } else if (correctAnswer === 5) {
+        document.getElementById("dino-img").style.marginLeft = "66svw"
+      }
+
+      if (correctAnswer >= 3) {
+        allFinal.setAttribute("href", "./finalOk.html");
+      } else if (correctAnswer < 3) {
+        allFinal.setAttribute("href", "./finalNok.html");
+      } else if (correctAnswer === 0) {
+        allFinal.setAttribute("href", "./quiz.html");
+      }
+
+      // 
+      // scoreDisplay.textContent = localStorage.getItem("countering");
+
+
+
+    });
+
   });
 
-  console.log(correctAnswer);
-});
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Disable input checkbox when checked
 
@@ -56,6 +99,9 @@ function blockCheck5(el) {
   const checkbox = document.querySelectorAll(".question5");
   checkbox.forEach((box) => (box.disabled = "disabled"));
 }
+
+
+
 
 // Partie Antoine
 document.addEventListener("DOMContentLoaded", (event) => {
