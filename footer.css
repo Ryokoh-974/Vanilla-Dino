@@ -1,19 +1,26 @@
  /*      FOOTER    de l'index       */
+ :root {
+     --firstColor: #5b3a29;
+     --SecondeColor: #014700;
+ }
 
  footer>.index-herbe {
      background-color: #f8c477;
      color: #558b2f;
-     margin-top: rem;
+     margin-top: 1rem;
  }
 
  footer>section>.fin-page {
      display: flex;
-     justify-content: space-around;
-     margin-right: 2rem;
+     flex-direction: row;
+     align-content: center;
+     justify-content: space-between;
+     align-items: flex-start;
  }
 
  .share-img {
      height: 3rem;
+
 
  }
 
@@ -22,31 +29,42 @@
      margin-top: 0.8rem;
  }
 
+ p {
+     color: var(--SecondeColor);
 
- .like {
-     cursor: pointer;
-     height: 100px;
-     width: 100px;
-     background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+ }
+
+ /* boutton like */
+ .container input {
      position: absolute;
-     top: 100%;
-     left: 94%;
-     transform: translate(-50%, 240%);
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
  }
 
- .anim-like {
-     animation-name: anim-like;
-     animation-duration: 0.8s;
-     animation-timing-function: steps(28);
+ .container {
+     display: block;
+     position: relative;
+     cursor: pointer;
+     user-select: none;
  }
 
+ .container>svg {
+     position: relative;
+     top: 0;
+     left: 0;
+     height: 40px;
 
- @keyframes anim-like {
-     from {
-         background-position: left;
-     }
+     transition: all 0.3s;
+     fill: #666;
+     margin-right: 0.3rem;
+ }
 
-     to {
-         background-position: right;
-     }
+ .container>svg:hover {
+     transform: scale(1.1) rotate(-10deg);
+ }
+
+ .container input:checked~svg {
+     fill: #2196F3;
  }
