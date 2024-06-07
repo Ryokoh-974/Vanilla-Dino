@@ -1,0 +1,99 @@
+ /*      FOOTER    de l'index       */
+ :root {
+     --firstColor: #5b3a29;
+     --SecondeColor: #014700;
+ }
+
+ footer>.index-herbe {
+     background-color: #f8c477;
+ }
+
+ footer>section>.fin-page {
+     display: flex;
+     justify-content: space-between;
+     gap: 2rem;
+
+ }
+
+ .share-img {
+     height: 3rem;
+ }
+
+ footer>section>div>p {
+     font-size: 1.1rem;
+     margin-top: 0.8rem;
+ }
+
+ p {
+     color: var(--SecondeColor);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
+
+ .made {
+     font-size: 1.1rem;
+     margin-top: 1rem;
+     display: flex;
+     justify-content: center;
+ }
+
+ /* boutton like */
+ .container input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
+ }
+
+ .container {
+     display: block;
+     position: relative;
+     cursor: pointer;
+     user-select: none;
+ }
+
+ .container>svg {
+     position: relative;
+     top: 0;
+     left: 0;
+     height: 40px;
+
+     transition: all 0.3s;
+     fill: #666;
+     margin-right: 0.3rem;
+ }
+
+ .container>svg:hover {
+     transform: scale(1.1) rotate(-10deg);
+ }
+
+ .container input:checked~svg {
+     fill: #2196F3;
+ }
+
+ @media screen and (min-width: 600px) {
+     footer>section>div>p {
+         font-size: 1.3rem;
+     }
+
+     footer>section>.fin-page {
+         display: flex;
+         justify-content: flex-end;
+         gap: 2rem;
+         margin-top: 2rem;
+         margin-right: 1rem;
+
+     }
+
+     .made {
+         font-size: 1.1rem;
+         margin-top: 1rem;
+         display: flex;
+         flex-direction: column-reverse;
+         margin-left: 1rem;
+
+
+
+     }
+
+ }

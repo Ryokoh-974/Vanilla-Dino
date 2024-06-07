@@ -29,15 +29,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       }
       if (correctAnswer === 1) {
-        document.getElementById("dino-img").style.marginLeft = "16svw";
+        document.getElementById("dino-img").style.marginLeft = "19%";
       } else if (correctAnswer === 2) {
-        document.getElementById("dino-img").style.marginLeft = "32svw"
+        document.getElementById("dino-img").style.marginLeft = "38%"
       } else if (correctAnswer === 3) {
-        document.getElementById("dino-img").style.marginLeft = "48svw"
+        document.getElementById("dino-img").style.marginLeft = "57%"
       } else if (correctAnswer === 4) {
-        document.getElementById("dino-img").style.marginLeft = "50svw"
+        document.getElementById("dino-img").style.marginLeft = "76%"
       } else if (correctAnswer === 5) {
-        document.getElementById("dino-img").style.marginLeft = "66svw"
+        document.getElementById("dino-img").style.marginLeft = "95%"
       }
 
       if (correctAnswer >= 3) {
@@ -124,18 +124,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
   princesse.className = "princesse-img";
   princessePage2.appendChild(princesse);
 
-});
-
-const like = document.querySelector(".like");
-
-let countLike = 0;
-like.addEventListener("click", () => {
-  if (countLike === 0) {
-    like.classList.toggle("anim-like");
-    countLike = 1;
-    like.style.backgroundPosition = "right";
-  } else {
-    countLike = 0;
-    like.style.backgroundPosition = "left";
-  }
 });

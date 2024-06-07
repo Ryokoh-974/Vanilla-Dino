@@ -11,6 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./ressources/image/logo-dino-ico50px.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="quizz.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="final.css">
     <title>DinoQuiz - CodeChallenge</title>
 </head>
 
@@ -29,11 +32,12 @@
                         alt="petit dinosaure qui avance de gauche à droite en boucle">
                 </div>
 
-                <div class="image-princesse-bouge">
-                    <img src="./ressources/image/princess1.PNG" class="princesse-img"
-                        alt="petite princesse qui avance de gauche à droite en boucle">
-                </div>
+                <div class="image-princesse-bouge"></div>
             </div>
+            <div class="chemin-img"></div>
+
+
+
 
         </nav>
         <div class="quizz-container">
@@ -49,7 +53,7 @@
                 <input type="radio" id="acordeon1" class="btn-acordeon">
                 <label for="acordeon1">
                     Les elements
-                    <span>&lt;a&gt; &lt;input&gt; &lt;img&gt; &lt;button&gt;</span>
+                    &lt;a&gt; &lt;input&gt; &lt;img&gt; &lt;button&gt;</span>
                     sont...?
 
                     <i class="bi bi-caret-down-fill"></i>
@@ -82,13 +86,13 @@
             <div class="acordeon">
                 <input type="radio" name="acordeon" id="acordeon2" class="btn-acordeon">
                 <label for="acordeon2">
-                    Que ça veut dire, je ecrit javascript vanilla
+                    Que veut dire l'appellation javascript vanilla ?
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer" for="btn-answer2">j'ai
-                        mange la glace de vanilla quand je ecrit mon code
+                    <label class="btn-answer" for="btn-answer2">Je
+                        mange une glace à la vanille quand je code
                         <input type="checkbox" id="btn-answer2" class="answer1 question2 question"
                             onclick="blockCheck2(this)">
                         <span class="checkmark"></span>
@@ -96,15 +100,14 @@
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer">Pure Javascript, sans libreries ou frameworks
+                    <label class="btn-answer">Javascript, sans libreries ou frameworks
                         <input type="checkbox" class="true question2 question" onclick="blockCheck2(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer">Le logo de Javascript est
-                        colour vanilla
+                    <label class="btn-answer">Le logo Javascript est de couleur vanille
                         <input type="checkbox" class="answer1 question2 question" onclick="blockCheck2(this)">
                         <span class="checkmark"></span>
                     </label>
@@ -116,7 +119,7 @@
             <div class="acordeon">
                 <input type="radio" name="acordeon" id="acordeon3" class="btn-acordeon">
                 <label for="acordeon3">
-                    Qu'affiche le code alert("10" + "5")
+                    Qu'affiche le code alert("10" + "5") ?
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
@@ -179,63 +182,63 @@
             <div class="acordeon">
                 <input type="radio" name="acordeon" id="acordeon5" class="btn-acordeon">
                 <label for="acordeon5">
-                    Comment tu resoudrais ton problem de code?
+                    Comment résoudre un problème de code ?
                     <i class="bi bi-caret-down-fill"></i>
                 </label>
 
                 <div class="answer">
-                    <label class="btn-answer">Je appelle Kevin de la WildCodeSchool
+                    <label class="btn-answer">J'appelle Kevin de la WildCodeSchool
                         <input type="checkbox" class="question5 question" onclick="blockCheck5(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer">Jai parle avec chatGPT
+                    <label class="btn-answer">Je demande au GOAT: CHAT GPT
                         <input type="checkbox" class="answer2 question5 question" onclick="blockCheck5(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="answer">
-                    <label class="btn-answer">J'ai fait de recherches
+                    <label class="btn-answer">Je fais mes propres recherches
                         <input type="checkbox" class="true question5 question" onclick="blockCheck5(this)">
                         <span class="checkmark"></span>
                     </label>
                 </div>
             </div>
 
-            <div class="submit-container">
+            <div class="submit-container button-effect">
                 <div class="btn-submit">
                     <a href="#" class="all-final">Envoyer </a>
                 </div>
             </div>
         </div>
-        <div class="return-main">
-            <a href="./index.html"><i class="bi bi-arrow-right-circle"></i></a>
-        </div>
+        <!-- <div class="return-main">
+            <a href="./index.html"><i class="bi bi-arrow-le-circle"></i></a>
+        </div> -->
 
     </main>
 
     <footer>
-        <svg viewBox="0 0 1440 320">
-            <path fill="#558B2F" fill-opacity="1"
-                d="M0,256L36.9,224L73.8,0L110.8,32L147.7,32L184.6,320L221.5,64L258.5,288L295.4,160L332.3,128L369.2,64L406.2,256L443.1,160L480,288L516.9,32L553.8,64L590.8,160L627.7,96L664.6,64L701.5,224L738.5,128L775.4,256L812.3,224L849.2,96L886.2,128L923.1,288L960,256L996.9,64L1033.8,256L1070.8,192L1107.7,224L1144.6,32L1181.5,224L1218.5,128L1255.4,288L1292.3,32L1329.2,64L1366.2,192L1403.1,224L1440,96L1440,320L1403.1,320L1366.2,320L1329.2,320L1292.3,320L1255.4,320L1218.5,320L1181.5,320L1144.6,320L1107.7,320L1070.8,320L1033.8,320L996.9,320L960,320L923.1,320L886.2,320L849.2,320L812.3,320L775.4,320L738.5,320L701.5,320L664.6,320L627.7,320L590.8,320L553.8,320L516.9,320L480,320L443.1,320L406.2,320L369.2,320L332.3,320L295.4,320L258.5,320L221.5,320L184.6,320L147.7,320L110.8,320L73.8,320L36.9,320L0,320Z">
-            </path>
-        </svg>
-        <!-- 
+        <section class="index-herbe">
 
-        <div class="fin-page">
-            <div>
+            <svg viewBox="0 0 1440 320">
+                <path fill="#558B2F" fill-opacity="1"
+                    d="M0,256L36.9,224L73.8,0L110.8,32L147.7,32L184.6,320L221.5,64L258.5,288L295.4,160L332.3,128L369.2,64L406.2,256L443.1,160L480,288L516.9,32L553.8,64L590.8,160L627.7,96L664.6,64L701.5,224L738.5,128L775.4,256L812.3,224L849.2,96L886.2,128L923.1,288L960,256L996.9,64L1033.8,256L1070.8,192L1107.7,224L1144.6,32L1181.5,224L1218.5,128L1255.4,288L1292.3,32L1329.2,64L1366.2,192L1403.1,224L1440,96L1440,320L1403.1,320L1366.2,320L1329.2,320L1292.3,320L1255.4,320L1218.5,320L1181.5,320L1144.6,320L1107.7,320L1070.8,320L1033.8,320L996.9,320L960,320L923.1,320L886.2,320L849.2,320L812.3,320L775.4,320L738.5,320L701.5,320L664.6,320L627.7,320L590.8,320L553.8,320L516.9,320L480,320L443.1,320L406.2,320L369.2,320L332.3,320L295.4,320L258.5,320L221.5,320L184.6,320L147.7,320L110.8,320L73.8,320L36.9,320L0,320Z">
+                </path>
+            </svg>
+
+            <div class="fin-page">
                 <p>@2024 *DinoQuiz* ® </p>
+                <button> <img src="./ressources/image/share.PNG" class="share-img"
+                        alt="bouton pour partager le jeu sur les réseaux sociaux">
+                </button>
             </div>
 
-            <button> <img src="./ressources/image/share.PNG" class="share-img"
-                    alt="bouton pour partager le jeu sur les réseaux sociaux">
-            </button>
-            <div class="like"></div> -->
-    </footer>
+        </section>
 
+    </footer>
     <script src="./script.js"></script>
 </body>
 
