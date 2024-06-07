@@ -44,10 +44,7 @@ a {
     background-color: var(--btn-color);
     border-radius: 1em;
     outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
+
     position: relative;
     transition: all 0.3s;
 }
@@ -60,19 +57,18 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+
 }
 
 .button-effect:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
+    /* box-shadow: 0 0 1em .25em var(--glow-color),
         0 0 4em 2em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
+        inset 0 0 .75em .25em var(--glow-color); */
     font-size: 17px;
+    cursor: pointer;
+    ;
 }
 
 .button-effect:active {
@@ -95,4 +91,22 @@ a {
     margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 900px) {
+
+    section>.image-fin-ok>.dino-img {
+        display: flex;
+
+        margin: 0 auto;
+        width: 1000px;
+        height: 1000px;
+
+    }
+
+    .loose {
+        font-size: 4rem;
+    }
+
+    .win {
+        font-size: 4rem;
+    }
+}

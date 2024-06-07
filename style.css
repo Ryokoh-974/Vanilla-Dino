@@ -10,15 +10,15 @@ html,
 body {
     max-width: 100% !important;
     overflow-x: clip !important;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 :root {
     --firstColor: #5b3a29;
     --SecondeColor: #014700;
+    --fontP: ''
 }
 
-/*                 Titre du jeu              */
 header>h1 {
     font-family: "silkscreen";
     border: solid 1px #FAF5E9;
@@ -33,9 +33,6 @@ body {
     background-color: #f8c477;
 }
 
-
-
-/*                 Règle du jeu              */
 h2 {
     text-align: center;
     font-size: bold;
@@ -54,7 +51,7 @@ section>p {
     font-size: 1.1rem;
 }
 
-/*                dino qui bouge de gauche à droite             */
+
 .selection {
     border: solid 1px #FAF5E9;
     color: var(--SecondeColor);
@@ -65,15 +62,6 @@ section>p {
     line-height: 1.5;
     font-size: 1.1rem;
 }
-
-
-/*                    !!!!!!!!!!!            a   CHECK            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    */
-/* section>div {            possible supp
-    height: 60px;
-} */
-
-/*                    !!!!!!!!!!!            a   CHECK            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    */
-
 
 .dino-img {
     height: 60px;
@@ -94,7 +82,7 @@ section>p {
     }
 
     100% {
-        transform: translateX(calc(100% + 220px));
+        transform: translateX(calc(100% + 660px));
     }
 }
 
@@ -106,25 +94,16 @@ section>p {
 
 }
 
-/* @keyframes dino-walk {            possible supp
-    from {
-        transform: translateX(0%);
-    }
-
-    to {
-        transform: translateX(100%);
-        /* 10 frames * 80px de largeur chaque 
-    }
-} 
-*/
 .chemin-img {
+
+    border: 4px var(--firstColor) dashed;
     width: 100%;
 }
 
 @media screen and (min-width: 600px) {
 
     header>h1 {
-        font-size: 2.5rem;
+        font-size: 5rem;
         padding: 1rem;
     }
 
@@ -133,85 +112,27 @@ section>p {
         margin: 1rem auto;
         padding: 2rem 3rem;
         max-width: 130ch;
-        text-align: center;
-        font-size: 1.5rem;
 
+        font-size: 1.8rem;
     }
 
-    .image-container {
-        /* width: 70%; */
-        gap: 0.5rem 4rem;
-        grid-template-columns: repeat(3, 20%);
-    }
-
-    .display-img {
-        margin-bottom: 2rem;
-        /* width: 70%; */
-        width: 120px;
-        height: 120px;
-        /* height: 200px; */
-        object-fit: cover;
-    }
-
-
-    /* Partie Antoine */
-    .display-img:hover {
-        transform: scale(3);
-    }
-
-    .expanded {
-        transform: scale(3);
-    }
-
-    .display-img:hover {
-        border-color: white;
-        transform: scale(1.1) rotate(-2deg);
-        filter: opacity(100%);
-        border: solid 3px #FAF5E9;
-        box-shadow: 0px 0px 10px #228B22;
-        inset: 0px 0px 10px #228B22;
+    .dino-img {
+        height: 90px;
+        animation: animate 12s linear infinite;
         transition: 0.2s;
-        transform: scale(1.2);
     }
 
-    .expanded {
-        /*partie javascript*/
-        transform: scale(1.2);
-        box-shadow: 0px 0px 10px #009B4D;
-        filter: opacity(100%);
-    }
+    @keyframes animate {
+        0% {
+            transform: translateX(calc(0% + -60px));
+        }
 
-    .button.enabled {
-        /*partie javascript*/
-        pointer-events: auto;
-        opacity: 1;
-        /*quand une image est a la classe expanded*/
-    }
-
-    .button {
-        grid-column: 2/3;
-        display: block;
-        background-color: black;
-        border-radius: 50px;
-        margin-top: 2rem;
-        pointer-events: none;
-        opacity: 0.5;
-    }
-
-    .button:hover {
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.369);
-    }
-
-
-    .button>a {
-        text-decoration: none;
-        color: red;
+        100% {
+            transform: translateX(calc(100% + 2400px));
+        }
     }
 
     /*                      parti   Anthony            */
-    section>div {
-        height: 50px;
-    }
 
     .quizz-container {
         width: 70%;
@@ -221,49 +142,6 @@ section>p {
         background-color: #F8C477;
         color: #558B2F;
     }
-
-    .princesse-img {
-        height: 60px;
-        animation: animate 8s linear infinite;
-    }
-
-    @keyframes animate {
-        0% {
-            transform: translateX(calc(-259% + 0px));
-        }
-
-        100% {
-            transform: translateX(calc(-99% + 552px));
-        }
-    }
-
-    .like {
-        cursor: pointer;
-        height: 100px;
-        width: 100px;
-        background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
-        position: absolute;
-        top: 100%;
-        left: 92%;
-        transform: translate(-350%, -80%);
-    }
-
-    .anim-like {
-        animation-name: anim-like;
-        animation-duration: 0.8s;
-        animation-timing-function: steps(28);
-    }
-
-    @keyframes anim-like {
-        from {
-            background-position: left;
-        }
-
-        to {
-            background-position: right;
-        }
-    }
-
 }
 
 .loose {

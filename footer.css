@@ -6,22 +6,17 @@
 
  footer>.index-herbe {
      background-color: #f8c477;
-     color: #558b2f;
-     margin-top: 1rem;
  }
 
  footer>section>.fin-page {
      display: flex;
-     flex-direction: row;
-     align-content: center;
      justify-content: space-between;
-     align-items: flex-start;
+     gap: 2rem;
+
  }
 
  .share-img {
      height: 3rem;
-
-
  }
 
  footer>section>div>p {
@@ -31,7 +26,14 @@
 
  p {
      color: var(--SecondeColor);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
 
+ .made {
+     font-size: 1.1rem;
+     margin-top: 1rem;
+     display: flex;
+     justify-content: center;
  }
 
  /* boutton like */
@@ -67,4 +69,31 @@
 
  .container input:checked~svg {
      fill: #2196F3;
+ }
+
+ @media screen and (min-width: 600px) {
+     footer>section>div>p {
+         font-size: 1.3rem;
+     }
+
+     footer>section>.fin-page {
+         display: flex;
+         justify-content: flex-end;
+         gap: 2rem;
+         margin-top: 2rem;
+         margin-right: 1rem;
+
+     }
+
+     .made {
+         font-size: 1.1rem;
+         margin-top: 1rem;
+         display: flex;
+         flex-direction: column-reverse;
+         margin-left: 1rem;
+
+
+
+     }
+
  }
